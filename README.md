@@ -55,5 +55,5 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * SCSS  
   
 **DEPENDENCIES**
-1. [Exuberant ctags](http://ctags.sourceforge.net)
+1. [Exuberant ctags](http://ctags.sourceforge.net)  
 2. DejaVu Sans Mono for Powerline (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
