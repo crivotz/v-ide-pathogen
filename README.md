@@ -30,7 +30,7 @@ PLUGIN
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/') 
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
-- - -
+- - - 
 COLOR SCHEMES
 -------------
 * [Busybee](http://www.vim.org/scripts/script.php?script_id=2549)
@@ -47,7 +47,7 @@ COLOR SCHEMES
 * [Vividchalk](http://www.vim.org/scripts/script.php?script_id=1891)
 * [Wombat](https://github.com/vim-scripts/Wombat)
 * [Zenburn](https://github.com/jnurmine/Zenburn)
-- - -
+- - - 
 SYNTAX
 ------
 * CSS
@@ -57,7 +57,7 @@ SYNTAX
 * HTML
 * Ruby
 * SCSS
-- - -
+- - - 
 DEPENDENCIES
 ------------
 1. [Exuberant ctags](http://ctags.sourceforge.net)
