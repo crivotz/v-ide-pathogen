@@ -1,5 +1,4 @@
-V-ide
-=====
+# V-ide
 Vim custom configuration, oriented for web developers (rails, ruby, php, html, css, SCSS, javascript).  
 I use this repository mainly to keep track of the changes that I make on my setup Vim.  
 But I hope that it will be useful to other  
@@ -8,8 +7,7 @@ Thanks to the developers of these plugins/color schemes
   
 N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple computers (You can notice it in vimrc) and for a problem with symbolic links I had to rename the configuration file _vimrc instead of .vimrc  
 - - - 
-PLUGIN
-------
+**PLUGIN**
 * [Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
 * [Ctrlp](https://github.com/kien/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
@@ -29,10 +27,8 @@ PLUGIN
 * [NERD_Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/') 
-* [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
-- - - 
+* [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
 COLOR SCHEMES
--------------
 * [Busybee](http://www.vim.org/scripts/script.php?script_id=2549)
 * [Codeschool](http://astonj.com/tech/vim-for-ruby-rails-and-a-sexy-theme/)
 * [Guardian](http://www.vim.org/scripts/script.php?script_id=1240)
@@ -46,19 +42,17 @@ COLOR SCHEMES
 * [Rubyblue](https://github.com/jlong/rubyblue)
 * [Vividchalk](http://www.vim.org/scripts/script.php?script_id=1891)
 * [Wombat](https://github.com/vim-scripts/Wombat)
-* [Zenburn](https://github.com/jnurmine/Zenburn)
-- - - 
-SYNTAX
-------
+* [Zenburn](https://github.com/jnurmine/Zenburn)  
+  
+**SYNTAX**
 * CSS
 * Eruby
 * Javascript
 * PHP
 * HTML
 * Ruby
-* SCSS
-- - - 
-DEPENDENCIES
-------------
+* SCSS  
+  
+**DEPENDENCIES**
 1. [Exuberant ctags](http://ctags.sourceforge.net)
 2. DejaVu Sans Mono for Powerline (You can find it inside Fonts folder, for another font take a look to the [Poweline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
