@@ -2,21 +2,17 @@ set nocompatible
 
 " Check OS
 if has('win32') || has('win64')
-	source $VIMRUNTIME/vimrc_example.vim
-	source $VIMRUNTIME/mswin.vim
 	behave mswin
-    set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\:h9
-    au GUIEnter * simalt ~n
+	set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\:h9
+	au GUIEnter * simalt ~n
 elseif has('macunix')
-    set transparency=5
-    set fuoptions=maxvert,maxhorz
-    au GUIEnter * set fullscreen
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
+	set transparency=5
+	set fuoptions=maxvert,maxhorz
+	au GUIEnter * set fullscreen
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
 elseif has('unix')
-    set lines=999 columns=999
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
-    source $VIMRUNTIME/vimrc_example.vim
-	source $VIMRUNTIME/mswin.vim
+	set lines=999 columns=999
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
 endif
 
 color molokai                               " Color scheme
@@ -46,17 +42,17 @@ set smartcase                               " Search with capsSovrasta l'opzione
 set autoindent                              " Copy indent when new row is started with <CR>  o O
 "set textwidth=79                            " Max rows length
 "set formatoptions=c,q,r,t                   " This is a sequence of letters which describes how
-                                            " automatic formatting is to be done.
-                                            "
-                                            " letter    meaning when present in 'formatoptions'
-                                            " ------    ---------------------------------------
-                                            " c         Auto-wrap comments using textwidth, inserting
-                                            "           the current comment leader automatically.
-                                            " q         Allow formatting of comments with "gq".
-                                            " r         Automatically insert the current comment leader
-                                            "           after hitting <Enter> in Insert mode. 
-                                            " t         Auto-wrap text using textwidth (does not apply
-                                            "           to comments)
+" automatic formatting is to be done.
+"
+" letter    meaning when present in 'formatoptions'
+" ------    ---------------------------------------
+" c         Auto-wrap comments using textwidth, inserting
+"           the current comment leader automatically.
+" q         Allow formatting of comments with "gq".
+" r         Automatically insert the current comment leader
+"           after hitting <Enter> in Insert mode. 
+" t         Auto-wrap text using textwidth (does not apply
+"           to comments)
 "set ruler                                  " Mostra il numero di linea e di colonna della posizione del cursore separati da virgola.
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
@@ -99,14 +95,14 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
+			\ 'default' : '',
+			\ 'vimshell' : $HOME.'/.vimshell_hist',
+			\ 'scheme' : $HOME.'/.gosh_completions'
+			\ }
 
 " Define keyword.
 if !exists('g:neocomplcache_keyword_patterns')
-    let g:neocomplcache_keyword_patterns = {}
+	let g:neocomplcache_keyword_patterns = {}
 endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
@@ -118,10 +114,10 @@ inoremap <expr><C-l>     neocomplcache#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  " Inserting <CR> key.
-  "return neocomplcache#smart_close_popup() . "\<CR>"
-  " For no inserting <CR> key.
-  return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+	" Inserting <CR> key.
+	"return neocomplcache#smart_close_popup() . "\<CR>"
+	" For no inserting <CR> key.
+	return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -147,7 +143,7 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_force_omni_patterns')
-  let g:neocomplcache_force_omni_patterns = {}
+	let g:neocomplcache_force_omni_patterns = {}
 endif
 let g:neocomplcache_force_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
@@ -165,15 +161,15 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
+			\ "\<Plug>(neosnippet_expand_or_jump)"
+			\: pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
+			\ "\<Plug>(neosnippet_expand_or_jump)"
+			\: "\<TAB>"
 
 " For snippet_complete marker.
 if has('conceal')
-  set conceallevel=2 concealcursor=i
+	set conceallevel=2 concealcursor=i
 endif
 
 " Enable snipMate compatibility feature.
