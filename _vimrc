@@ -2,6 +2,8 @@ set nocompatible
 
 " Check OS
 if has('win32') || has('win64')
+	source $VIMRUNTIME/vimrc_example.vim
+	source $VIMRUNTIME/mswin.vim
 	behave mswin
 	set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\:h9
 	au GUIEnter * simalt ~n
@@ -11,6 +13,8 @@ elseif has('macunix')
 	au GUIEnter * set fullscreen
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
 elseif has('unix')
+	source $VIMRUNTIME/vimrc_example.vim
+	source $VIMRUNTIME/mswin.vim
 	set lines=999 columns=999
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
 endif
