@@ -6,6 +6,7 @@ But I hope that it will be useful to other
 Thanks to the developers of these plugins/color schemes  
   
 N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple computers (You can notice it in vimrc) and for a problem with symbolic links I had to rename the configuration file *_vimrc* instead of *.vimrc*  
+![v-ide screenshot](https://dl.dropboxusercontent.com/u/13847373/v-ide.png)
 - - - 
 **PLUGIN**
 * [Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
