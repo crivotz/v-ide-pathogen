@@ -74,11 +74,19 @@ filetype indent on                          " Enable filetype-specific indenting
 filetype plugin on                          " Enable filetype-specific plugins
 syntax on									                  " Syntax highlighting
 
+"**PLUGINS CONFIGURATION**
 
-" PLUGINS CONFIGURATION
 let NERDTreeShowBookmarks=1
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
+
+" SYNTASTIC
+"let g:syntastic_enable_highlighting = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 3
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " AUTOCOMPLETE CONFIGURATION
 " Disable AutoComplPop.
@@ -219,4 +227,5 @@ endif
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F3> :NumbersToggle<CR>
 nmap <F7> :NERDTree<CR>
+nmap <F6> :Errors<CR>
 nmap <F2> :Calendar<CR>
