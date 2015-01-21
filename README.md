@@ -28,6 +28,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/') 
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
+* [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
   
 **COLOR SCHEMES**
 * [Busybee](http://www.vim.org/scripts/script.php?script_id=2549)
