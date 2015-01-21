@@ -44,20 +44,20 @@ set incsearch                               " Show results immediately on search
 set ignorecase                              " Ignora le maiuscole durante le ricerche.
 set smartcase                               " Search with capsSovrasta l'opzione 'ignorecase' se il pattern di ricerca contiene caratteri maiuscoli. 
 set autoindent                              " Copy indent when new row is started with <CR>  o O
-"set textwidth=79                            " Max rows length
-"set formatoptions=c,q,r,t                   " This is a sequence of letters which describes how
-" automatic formatting is to be done.
-"
-" letter    meaning when present in 'formatoptions'
-" ------    ---------------------------------------
-" c         Auto-wrap comments using textwidth, inserting
-"           the current comment leader automatically.
-" q         Allow formatting of comments with "gq".
-" r         Automatically insert the current comment leader
-"           after hitting <Enter> in Insert mode. 
-" t         Auto-wrap text using textwidth (does not apply
-"           to comments)
-"set ruler                                  " Mostra il numero di linea e di colonna della posizione del cursore separati da virgola.
+"set textwidth=79                           " Max rows length
+"set formatoptions=c,q,r,t                  " This is a sequence of letters which describes how
+																						" automatic formatting is to be done.
+																						"
+																						" letter    meaning when present in 'formatoptions'
+																						" ------    ---------------------------------------
+																						" c         Auto-wrap comments using textwidth, inserting
+																						"           the current comment leader automatically.
+																						" q         Allow formatting of comments with "gq".
+																						" r         Automatically insert the current comment leader
+																						"           after hitting <Enter> in Insert mode. 
+																						" t         Auto-wrap text using textwidth (does not apply
+																						"           to comments)
+"set ruler                                  
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
 set cursorcolumn
@@ -74,11 +74,19 @@ filetype indent on                          " Enable filetype-specific indenting
 filetype plugin on                          " Enable filetype-specific plugins
 syntax on									                  " Syntax highlighting
 
+"**PLUGINS CONFIGURATION**
 
-" PLUGINS CONFIGURATION
 let NERDTreeShowBookmarks=1
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
+
+" SYNTASTIC
+"let g:syntastic_enable_highlighting = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 3
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " AUTOCOMPLETE CONFIGURATION
 " Disable AutoComplPop.
@@ -216,7 +224,8 @@ else
 endif
 
 "Shortcuts
-nmap <F8> :TagbarToggle<CR>
-nnoremap <F3> :NumbersToggle<CR>
-nmap <F7> :NERDTree<CR>
 nmap <F2> :Calendar<CR>
+nnoremap <F3> :NumbersToggle<CR>
+nmap <F6> :Errors<CR>
+nmap <F7> :NERDTree<CR>
+nmap <F8> :TagbarToggle<CR>
