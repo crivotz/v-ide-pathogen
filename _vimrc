@@ -10,7 +10,7 @@ if has('win32') || has('win64')
 elseif has('macunix')
 	set transparency=5
 	set fuoptions=maxvert,maxhorz
-	au GUIEnter * set fullscreen
+	"au GUIEnter * set fullscreen
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
 elseif has('unix')
 	source $VIMRUNTIME/vimrc_example.vim
@@ -226,6 +226,7 @@ endif
 "Shortcuts
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
+map <F4> :set list! list? <CR>
 nmap <F6> :Errors<CR>
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
