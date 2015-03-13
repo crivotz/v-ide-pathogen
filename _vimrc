@@ -8,7 +8,7 @@ if has('win32') || has('win64')
 	set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\:h9
 	au GUIEnter * simalt ~n
 elseif has('macunix')
-	set transparency=5
+	"set transparency=5
 	set fuoptions=maxvert,maxhorz
 	"au GUIEnter * set fullscreen
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
@@ -79,6 +79,9 @@ syntax on									                  " Syntax highlighting
 let NERDTreeShowBookmarks=1
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
+
+" COLORIZER
+let g:colorizer_auto_filetype='css,html'
 
 " SYNTASTIC
 "let g:syntastic_enable_highlighting = 1

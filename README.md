@@ -30,6 +30,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/') 
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
+* [Colorize](https://github.com/chrisbra/Colorizer): color hex codes and color names
   
 **COLOR SCHEMES**
 * [Busybee](http://www.vim.org/scripts/script.php?script_id=2549)
