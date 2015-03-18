@@ -1,84 +1,112 @@
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = git://github.com/bling/vim-airline
+	ignore = untracked
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim
+	ignore = untracked
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate
+	ignore = untracked
 [submodule "vim/bundle/vim-gitgutter"]
 	path = vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter
+	ignore = untracked
 [submodule "vim/bundle/neocomplcache"]
 	path = vim/bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.vim
+	ignore = untracked
 [submodule "vim/bundle/neosnippet"]
 	path = vim/bundle/neosnippet
 	url = git://github.com/Shougo/neosnippet.vim
+	ignore = untracked
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails
+	ignore = untracked
 [submodule "vim/bundle/vim-bundler"]
 	path = vim/bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler
+	ignore = untracked
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive
+	ignore = untracked
 [submodule "vim/bundle/scss-syntax"]
 	path = vim/bundle/scss-syntax
 	url = git://github.com/cakebaker/scss-syntax.vim
+	ignore = untracked
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+	ignore = untracked
 [submodule "vim/bundle/vim-abolish"]
 	path = vim/bundle/vim-abolish
 	url = git://github.com/tpope/vim-abolish
+	ignore = untracked
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = git://github.com/tmhedberg/matchit
+	ignore = untracked
 [submodule "vim/bundle/vim-plugin-minibufexpl"]
 	path = vim/bundle/vim-plugin-minibufexpl
 	url = git://github.com/techlivezheng/vim-plugin-minibufexpl
+	ignore = untracked
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter
+	ignore = untracked
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree
+	ignore = untracked
 [submodule "vim/bundle/numbers"]
 	path = vim/bundle/numbers
 	url = git://github.com/myusuf3/numbers.vim
+	ignore = untracked
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround
+	ignore = untracked
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
+	ignore = untracked
 [submodule "vim/bundle/Colorizer"]
 	path = vim/bundle/Colorizer
 	url = git://github.com/chrisbra/Colorizer
+	ignore = untracked
 [submodule "vim/bundle/molokai"]
 	path = vim/bundle/molokai
 	url = git://github.com/tomasr/molokai
+	ignore = untracked
 [submodule "vim/bundle/vim-simple-todo"]
 	path = vim/bundle/vim-simple-todo
 	url = git://github.com/vitalk/vim-simple-todo.git
+	ignore = untracked
 [submodule "vim/bundle/leap"]
 	path = vim/bundle/leap
 	url = git://github.com/yoos/leap.vim
+	ignore = untracked
 [submodule "vim/bundle/vim-railscasts-theme"]
 	path = vim/bundle/vim-railscasts-theme
 	url = git://github.com/jpo/vim-railscasts-theme
+	ignore = untracked
 [submodule "vim/bundle/rubyblue"]
 	path = vim/bundle/rubyblue
 	url = git://github.com/jlong/rubyblue
+	ignore = untracked
 [submodule "vim/bundle/Wombat"]
 	path = vim/bundle/Wombat
 	url = git://github.com/vim-scripts/Wombat
+	ignore = untracked
 [submodule "vim/bundle/Zenburn"]
 	path = vim/bundle/Zenburn
 	url = git://github.com/jnurmine/Zenburn
+	ignore = untracked
 [submodule "vim/bundle/HTML-AutoCloseTag"]
 	path = vim/bundle/HTML-AutoCloseTag
 	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
+	ignore = untracked
