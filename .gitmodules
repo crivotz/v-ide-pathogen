@@ -61,3 +61,21 @@
 [submodule "vim/bundle/molokai"]
 	path = vim/bundle/molokai
 	url = git://github.com/tomasr/molokai
+[submodule "vim/bundle/vim-simple-todo"]
+	path = vim/bundle/vim-simple-todo
+	url = git://github.com/vitalk/vim-simple-todo.git
+[submodule "vim/bundle/leap"]
+	path = vim/bundle/leap
+	url = git://github.com/yoos/leap.vim
+[submodule "vim/bundle/vim-railscasts-theme"]
+	path = vim/bundle/vim-railscasts-theme
+	url = git://github.com/jpo/vim-railscasts-theme
+[submodule "vim/bundle/rubyblue"]
+	path = vim/bundle/rubyblue
+	url = git://github.com/jlong/rubyblue
+[submodule "vim/bundle/Wombat"]
+	path = vim/bundle/Wombat
+	url = git://github.com/vim-scripts/Wombat
+[submodule "vim/bundle/Zenburn"]
+	path = vim/bundle/Zenburn
+	url = git://github.com/jnurmine/Zenburn

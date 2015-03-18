@@ -18,7 +18,6 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Neosnippet](https://github.com/Shougo/neosnippet.vim): The Neosnippet plug-In adds snippet support to Vim. Snippets are small templates for commonly used code that you can fill in on the fly
 * [Rails](https://github.com/tpope/vim-rails): Ruby on Rails power tools
 * [Fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
-* [Vim-ruby](https://github.com/vim-ruby/vim-ruby): Vim configuration files for editing and compiling Ruby within Vim
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Abolish](https://github.com/tpope/vim-abolish): easily search for, substitute, and abbreviate multiple variants of a word
@@ -31,20 +30,13 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
 * [Colorize](https://github.com/chrisbra/Colorizer): color hex codes and color names
+* [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists
   
 **COLOR SCHEMES**
-* [Busybee](http://www.vim.org/scripts/script.php?script_id=2549)
-* [Codeschool](http://astonj.com/tech/vim-for-ruby-rails-and-a-sexy-theme/)
-* [Guardian](http://www.vim.org/scripts/script.php?script_id=1240)
 * [Leap](https://github.com/yoos/leap.vim)
-* [Midnight](http://www.vim.org/scripts/script.php?script_id=253)
 * [Molokai](https://github.com/tomasr/molokai)
-* [Navajo-night](http://www.vim.org/scripts/script.php?script_id=271)
-* [Oceandeep](http://www.vim.org/scripts/script.php?script_id=368)
 * [Railscasts](https://github.com/jpo/vim-railscasts-theme)
-* [Rdark](http://www.vim.org/scripts/script.php?script_id=1732)
 * [Rubyblue](https://github.com/jlong/rubyblue)
-* [Vividchalk](http://www.vim.org/scripts/script.php?script_id=1891)
 * [Wombat](https://github.com/vim-scripts/Wombat)
 * [Zenburn](https://github.com/jnurmine/Zenburn)  
   
