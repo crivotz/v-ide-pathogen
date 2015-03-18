@@ -9,6 +9,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 ![v-ide screenshot](https://dl.dropboxusercontent.com/u/13847373/v-ide.png)
 - - - 
 **PLUGIN**
+* [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all
 * [Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
 * [Ctrlp](https://github.com/kien/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
@@ -31,6 +32,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
 * [Colorize](https://github.com/chrisbra/Colorizer): color hex codes and color names
 * [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists
+* [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler
   
 **COLOR SCHEMES**
 * [Leap](https://github.com/yoos/leap.vim)
