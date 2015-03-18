@@ -32,6 +32,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
 * [Colorize](https://github.com/chrisbra/Colorizer): color hex codes and color names
 * [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists
+* [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag): Automatically closes HTML tags once you finish typing them
 * [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler
   
 **COLOR SCHEMES**

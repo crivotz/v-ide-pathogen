@@ -198,7 +198,7 @@ let g:neosnippet#snippets_directory='~/.vim/snippets'
 "au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 if !has('win32') && !has('win64')
 	"helptags  ~/.vim/doc
-	au FileType xhtml,xml so ~/.vim/ftplugin/html_autoclosetag.vim
+	au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
 else
 	helptags C:\Program Files\Vim\vimfiles\doc 
 	au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
