@@ -308,6 +308,11 @@
 <Plug>(neosnippet_expand_or_jump)	neosnippet.txt	/*<Plug>(neosnippet_expand_or_jump)*
 <Plug>(neosnippet_jump)	neosnippet.txt	/*<Plug>(neosnippet_jump)*
 <Plug>(neosnippet_jump_or_expand)	neosnippet.txt	/*<Plug>(neosnippet_jump_or_expand)*
+<Plug>(simple-todo-above)	simple-todo.txt	/*<Plug>(simple-todo-above)*
+<Plug>(simple-todo-below)	simple-todo.txt	/*<Plug>(simple-todo-below)*
+<Plug>(simple-todo-mark-as-done)	simple-todo.txt	/*<Plug>(simple-todo-mark-as-done)*
+<Plug>(simple-todo-mark-as-undone)	simple-todo.txt	/*<Plug>(simple-todo-mark-as-undone)*
+<Plug>(simple-todo-new)	simple-todo.txt	/*<Plug>(simple-todo-new)*
 ClearAllCtrlPCaches	ctrlp.txt	/*ClearAllCtrlPCaches*
 ClearCtrlPCache	ctrlp.txt	/*ClearCtrlPCache*
 Colorizer	Colorizer.txt	/*Colorizer*
@@ -1096,6 +1101,11 @@ s_<Plug>(neosnippet_expand)	neosnippet.txt	/*s_<Plug>(neosnippet_expand)*
 s_<Plug>(neosnippet_expand_or_jump)	neosnippet.txt	/*s_<Plug>(neosnippet_expand_or_jump)*
 s_<Plug>(neosnippet_jump)	neosnippet.txt	/*s_<Plug>(neosnippet_jump)*
 s_<Plug>(neosnippet_jump_or_expand)	neosnippet.txt	/*s_<Plug>(neosnippet_jump_or_expand)*
+simple-todo	simple-todo.txt	/*simple-todo*
+simple-todo-contrib	simple-todo.txt	/*simple-todo-contrib*
+simple-todo-into	simple-todo.txt	/*simple-todo-into*
+simple-todo-maps	simple-todo.txt	/*simple-todo-maps*
+simple-todo.txt	simple-todo.txt	/*simple-todo.txt*
 surround	surround.txt	/*surround*
 surround-customizing	surround.txt	/*surround-customizing*
 surround-issues	surround.txt	/*surround-issues*

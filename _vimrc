@@ -1,4 +1,5 @@
 set nocompatible
+execute pathogen#infect()
 
 " Check OS
 if has('win32') || has('win64')
@@ -33,6 +34,7 @@ set wrapscan                                " Start search from the beginning
 set nobackup
 set nowritebackup
 set noswapfile 
+set noundofile
 set tabstop=2                               " N space for tab
 set shiftwidth=2                            " N space for indent
 set noexpandtab                             " Use space for a <Tab>.
