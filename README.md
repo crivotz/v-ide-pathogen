@@ -34,6 +34,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists
 * [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag): Automatically closes HTML tags once you finish typing them
 * [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler
+* [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values
   
 **COLOR SCHEMES**
 * [Leap](https://github.com/yoos/leap.vim)
@@ -50,7 +51,8 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * PHP
 * HTML
 * Ruby
-* SCSS  
+* SCSS
+* JSON
   
 **DEPENDENCIES**  
 1. [Exuberant ctags](http://ctags.sourceforge.net)  

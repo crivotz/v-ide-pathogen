@@ -110,3 +110,7 @@
 	path = vim/bundle/HTML-AutoCloseTag
 	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
 	ignore = untracked
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = git://github.com/elzr/vim-json.git
+	ignore = untracked
