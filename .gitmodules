@@ -114,3 +114,7 @@
 	path = vim/bundle/vim-json
 	url = git://github.com/elzr/vim-json.git
 	ignore = untracked
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+	ignore = untracked

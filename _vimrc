@@ -37,7 +37,9 @@ set noswapfile
 set noundofile
 set tabstop=2                               " N space for tab
 set shiftwidth=2                            " N space for indent
-set noexpandtab                             " Use space for a <Tab>.
+set softtabstop=2
+set expandtab                               " Use space for a <Tab>.
+"set noexpandtab                             " Use <Tab> 
 set smarttab                                
 set showcmd                                 " Show command 
 set showmatch                               " Show close bracket
@@ -229,9 +231,12 @@ else
 endif
 
 "Shortcuts
+"<F1> open help
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
 map <F4> :set list! list? <CR>
+"<F5> refresh ctrlp
 nmap <F6> :Errors<CR>
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
+nmap <leader>bda :bd <C-a> <CR>
