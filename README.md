@@ -36,6 +36,9 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler
 * [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
+* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
+* [NrrwRgn](https://github.com/chrisbra/NrrwRgn.git): A Narrow Region Plugin for vim
+
   
 **COLOR SCHEMES**
 * [Leap](https://github.com/yoos/leap.vim)

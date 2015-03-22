@@ -118,3 +118,9 @@
 	path = vim/bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
 	ignore = untracked
+[submodule "vim/bundle/vim-easymotion"]
+	path = vim/bundle/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion
+[submodule "vim/bundle/NrrwRgn"]
+	path = vim/bundle/NrrwRgn
+	url = git://github.com/chrisbra/NrrwRgn.git
