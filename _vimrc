@@ -14,8 +14,8 @@ elseif has('macunix')
 	"au GUIEnter * set fullscreen
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
 elseif has('unix')
-	source $VIMRUNTIME/vimrc_example.vim
-	source $VIMRUNTIME/mswin.vim
+	"source $VIMRUNTIME/vimrc_example.vim
+	"source $VIMRUNTIME/mswin.vim
 	set lines=999 columns=999
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
 endif
@@ -70,6 +70,7 @@ set cursorcolumn
 "hi CursorLine term=none cterm=none ctermbg=5
 set mouse=a                                 " Abilita l'uso del mouse.
 set autoindent
+set backspace=indent,eol,start whichwrap+=<,>,[,]
 set undolevels=1000 						            "maximum number of changes that can be undone
 set history=1000  							            " Store a ton of history (default is 20)
 set showmode								                " Display current mode
@@ -77,6 +78,29 @@ filetype on                                 " Enable filetype detection
 filetype indent on                          " Enable filetype-specific indenting
 filetype plugin on                          " Enable filetype-specific plugins
 syntax on									                  " Syntax highlighting
+
+" jump to the last known cursor position
+autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
+
+" WIN BEHAVIOR
+" set 'selection', 'selectmode', 'mousemodel' and 'keymodel' for MS-Windows
+behave mswin
+" backspace in Visual mode deletes selection
+vnoremap <BS> d
+" CTRL-X and SHIFT-Del are Cut
+vnoremap <C-X> "+x
+vnoremap <S-Del> "+x
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C> "+y
+vnoremap <C-Insert> "+y
+" CTRL-V and SHIFT-Insert are Paste
+map <C-V>		"+gP
+map <S-Insert>		"+gP
+cmap <C-V>		<C-R>+
+cmap <S-Insert>		<C-R>+
 
 "**PLUGINS CONFIGURATION**
 
