@@ -38,7 +38,9 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn.git): A Narrow Region Plugin for vim
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script): CoffeeScript support for vim
+* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script): CoffeeScript support for vim (disabled in vimrc)
+* [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
+
 
   
 **COLOR SCHEMES**

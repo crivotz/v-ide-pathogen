@@ -1,4 +1,8 @@
 set nocompatible
+"Disabled plugin
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'vim-coffee-script')
+
 execute pathogen#infect()
 
 " Check OS
@@ -87,7 +91,7 @@ autocmd BufReadPost *
 
 " WIN BEHAVIOR
 " set 'selection', 'selectmode', 'mousemodel' and 'keymodel' for MS-Windows
-behave mswin
+"behave mswin
 " backspace in Visual mode deletes selection
 vnoremap <BS> d
 " CTRL-X and SHIFT-Del are Cut
@@ -259,7 +263,8 @@ endif
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
 map <F4> :set list! list? <CR>
-"<F5> refresh ctrlp
+" if ctrlp is open <F5> refresh else
+nnoremap <F5> :GundoToggle<CR>
 nmap <F6> :Errors<CR>
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
