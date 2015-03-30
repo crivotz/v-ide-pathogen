@@ -30,7 +30,7 @@ set laststatus=2
 set guioptions=aAce
 "set list                                   " Show special chars
 set nu                                      " Numero riga
-set nohidden                                " Close the buffer when I close the tab
+set hidden                                " Close the buffer when I close the tab
 set so=10                                   " Ros after cursor
 set splitright                              " Open vertical splits to the right
 set splitbelow                              " Open horizontal splits to the bottom
@@ -269,3 +269,8 @@ nmap <F6> :Errors<CR>
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <leader>bda :bd <C-a> <CR>
+"Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
