@@ -134,3 +134,7 @@
 	path = vim/bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
 	ignore = dirty
+[submodule "vim/bundle/neocomplete"]
+	path = vim/bundle/neocomplete
+	url = git://github.com/Shougo/neocomplete.vim.git
+	ignore = dirty

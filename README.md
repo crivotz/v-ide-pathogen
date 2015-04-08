@@ -15,7 +15,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Ctrlp](https://github.com/kien/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
 * [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.
-* [Neocomplcache](https://github.com/Shougo/neocomplcache.vim): Auto-completion system
+* [Neocomplete](https://github.com/Shougo/neocomplete.vim): Auto-completion system
 * [Neosnippet](https://github.com/Shougo/neosnippet.vim): The Neosnippet plug-In adds snippet support to Vim. Snippets are small templates for commonly used code that you can fill in on the fly
 * [Rails](https://github.com/tpope/vim-rails): Ruby on Rails power tools
 * [Fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
