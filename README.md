@@ -50,6 +50,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Rubyblue](https://github.com/jlong/rubyblue)
 * [Wombat](https://github.com/vim-scripts/Wombat)
 * [Zenburn](https://github.com/jnurmine/Zenburn)  
+* [Solarized](https://github.com/altercation/vim-colors-solarized)  
   
 **SYNTAX**
 * CSS
@@ -63,5 +64,6 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * JSON
   
 **DEPENDENCIES**  
-1. [Exuberant ctags](http://ctags.sourceforge.net)  
-2. DejaVu Sans Mono for Powerline (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
+1. Vim compiled with ruby and lua 
+2. [Exuberant ctags](http://ctags.sourceforge.net)  
+3. DejaVu Sans Mono for Powerline (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
