@@ -114,7 +114,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
 
 " COLORIZER
-let g:colorizer_auto_filetype='css,html'
+let g:colorizer_auto_filetype='scss,css,html'
 
 " SYNTASTIC
 "let g:syntastic_enable_highlighting = 1
@@ -259,6 +259,12 @@ else
 		silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 	endfunction
 endif
+
+augroup ruby_subtypes
+  autocmd!
+  autocmd BufNewFile,BufRead *.pdf.erb let b:eruby_subtype='html'
+  autocmd BufNewFile,BufRead *.pdf.erb set filetype=eruby
+augroup END
 
 "Shortcuts
 "<F1> open help
