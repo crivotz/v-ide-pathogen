@@ -142,3 +142,7 @@
 	path = vim/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
   ignore = untracked
+[submodule "vim/bundle/vim-capslock"]
+	path = vim/bundle/vim-capslock
+	url = git://github.com/tpope/vim-capslock.git
+  ignore = untracked
