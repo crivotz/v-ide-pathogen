@@ -114,7 +114,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
 
 " COLORIZER
-let g:colorizer_auto_filetype='scss,css,html'
+let g:colorizer_auto_filetype='scss,css,html,htm'
 
 " SYNTASTIC
 "let g:syntastic_enable_highlighting = 1
@@ -134,6 +134,7 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplete#sources#tags#cache_limit_size = 5000000
 
 " Enable heavy features.
 " Use camel case completion.
@@ -195,7 +196,7 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}
 endif
 let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
@@ -227,7 +228,6 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/snippets'
 
-"au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 if !has('win32') && !has('win64')
 	"helptags  ~/.vim/doc
 	au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
@@ -265,6 +265,8 @@ augroup ruby_subtypes
   autocmd BufNewFile,BufRead *.pdf.erb let b:eruby_subtype='html'
   autocmd BufNewFile,BufRead *.pdf.erb set filetype=eruby
 augroup END
+
+au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 "Shortcuts
 "<F1> open help
