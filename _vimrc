@@ -228,6 +228,9 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/snippets'
 
+" vim-tags auto generate on save
+let g:vim_tags_auto_generate = 1
+
 if !has('win32') && !has('win64')
 	"helptags  ~/.vim/doc
 	au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim

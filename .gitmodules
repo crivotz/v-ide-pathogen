@@ -146,3 +146,7 @@
 	path = vim/bundle/vim-capslock
 	url = git://github.com/tpope/vim-capslock.git
   ignore = untracked
+[submodule "vim/bundle/vim-tags"]
+	path = vim/bundle/vim-tags
+	url = https://github.com/szw/vim-tags.git
+  ignore = untracked
