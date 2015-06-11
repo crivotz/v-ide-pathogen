@@ -114,6 +114,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 let g:airline_powerline_fonts = 1
 
 " COLORIZER
+let g:colorizer_auto_color = 1
 let g:colorizer_auto_filetype='scss,css,html,htm'
 
 " SYNTASTIC
