@@ -30,7 +30,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/') 
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim 
-* [Colorize](https://github.com/chrisbra/Colorizer): color hex codes and color names
+* [Vim-css-color](https://github.com/ap/vim-css-color.git): color hex codes and color names
 * [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists
 * [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag): Automatically closes HTML tags once you finish typing them
 * [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler

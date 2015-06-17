@@ -146,3 +146,7 @@
 	path = vim/bundle/vim-tags
 	url = https://github.com/szw/vim-tags.git
   ignore = untracked
+[submodule "vim/bundle/vim-css-color"]
+	path = vim/bundle/vim-css-color
+	url = git://github.com/ap/vim-css-color.git
+  ignore = untracked
