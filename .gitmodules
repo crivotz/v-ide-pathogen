@@ -74,10 +74,6 @@
 	path = vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
 	ignore = untracked
-[submodule "vim/bundle/Colorizer"]
-	path = vim/bundle/Colorizer
-	url = git://github.com/chrisbra/Colorizer
-	ignore = untracked
 [submodule "vim/bundle/molokai"]
 	path = vim/bundle/molokai
 	url = git://github.com/tomasr/molokai
