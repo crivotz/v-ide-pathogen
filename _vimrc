@@ -121,6 +121,13 @@ let g:syntastic_loc_list_height = 3
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" FASTFOLDS
+set foldmethod=indent
+set foldlevel=1
+set foldnestmax=10
+" Open all folds by default
+set nofoldenable
+
 " AUTOCOMPLETE CONFIGURATION
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
