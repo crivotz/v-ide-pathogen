@@ -150,3 +150,7 @@
 	path = vim/bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
   ignore = untracked
+[submodule "vim/bundle/vim-repeat"]
+	path = vim/bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+  ignore = untracked

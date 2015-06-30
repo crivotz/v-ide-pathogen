@@ -42,6 +42,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
 * [vim-capslock](https://github.com/tpope/vim-capslock.git): Software capslock (disable hw key via OS)
 * [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim
+* [vim-repeat](https://github.com/tpope/vim-repeat.git): enable repeating supported plugin maps with .
 
   
 **COLOR SCHEMES**
