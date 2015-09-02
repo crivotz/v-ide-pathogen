@@ -21,7 +21,7 @@ elseif has('macunix')
 elseif has('unix')
 	"source $VIMRUNTIME/vimrc_example.vim
 	"source $VIMRUNTIME/mswin.vim
-	set lines=999 columns=999
+	"set lines=999 columns=999
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
 endif
 
