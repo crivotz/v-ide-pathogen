@@ -68,4 +68,4 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 **DEPENDENCIES**  
 1. Vim compiled with ruby and lua 
 2. [Exuberant ctags](http://ctags.sourceforge.net)  
-3. DejaVu Sans Mono for Powerline (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
+3. Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))

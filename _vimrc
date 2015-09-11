@@ -22,7 +22,8 @@ elseif has('unix')
 	"source $VIMRUNTIME/vimrc_example.vim
 	"source $VIMRUNTIME/mswin.vim
 	"set lines=999 columns=999
-	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
+  "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
+  set guifont=Hack\ 9
 endif
 
 color molokai                               " Color scheme
