@@ -17,7 +17,8 @@ elseif has('macunix')
 	"set transparency=5
 	set fuoptions=maxvert,maxhorz
 	"au GUIEnter * set fullscreen
-	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
+  "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
+  set guifont=Hack\:h11
 elseif has('unix')
 	"source $VIMRUNTIME/vimrc_example.vim
 	"source $VIMRUNTIME/mswin.vim
