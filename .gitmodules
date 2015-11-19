@@ -154,3 +154,7 @@
 	path = vim/bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
   ignore = untracked
+[submodule "vim/bundle/rainbow"]
+	path = vim/bundle/rainbow
+	url = https://github.com/luochen1990/rainbow.git
+  ignore = untracked
