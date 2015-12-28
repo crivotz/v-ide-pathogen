@@ -44,6 +44,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim
 * [vim-repeat](https://github.com/tpope/vim-repeat.git): enable repeating supported plugin maps with .
 * [rainbow parentheses improved](https://github.com/luochen1990/rainbow): help you read complex code by showing diff level of parentheses in diff color. 
+* [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim 
 
   
 **COLOR SCHEMES**
