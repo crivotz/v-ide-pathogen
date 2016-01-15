@@ -20,7 +20,8 @@ execute pathogen#helptags()
 " SET THE GUI COLOR SCHEME
 " =============================================================================
 if has("gui_running")
-  color molokai                               
+  set background=dark
+  color hybrid                               
 endif
 
 " =============================================================================

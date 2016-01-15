@@ -170,7 +170,3 @@
 	path = vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
   ignore = untracked
-[submodule "vim/bundle/tomorrow-theme"]
-	path = vim/bundle/tomorrow-theme
-	url = https://github.com/chriskempson/tomorrow-theme.git
-  ignore = untracked
