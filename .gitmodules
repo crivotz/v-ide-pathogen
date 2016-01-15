@@ -162,3 +162,15 @@
 	path = vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
   ignore = untracked
+[submodule "vim/bundle/vim-hybrid"]
+	path = vim/bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git
+  ignore = untracked
+[submodule "vim/bundle/badwolf"]
+	path = vim/bundle/badwolf
+	url = https://github.com/sjl/badwolf.git
+  ignore = untracked
+[submodule "vim/bundle/tomorrow-theme"]
+	path = vim/bundle/tomorrow-theme
+	url = https://github.com/chriskempson/tomorrow-theme.git
+  ignore = untracked

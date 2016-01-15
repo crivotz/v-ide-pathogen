@@ -48,8 +48,11 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 
   
 **COLOR SCHEMES**
-* [Leap](https://github.com/yoos/leap.vim)
 * [Molokai](https://github.com/tomasr/molokai)
+* [Vim-hybrid](https://github.com/w0ng/vim-hybrid)
+* [Badwolf](https://github.com/sjl/badwolf)
+* [Tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
+* [Leap](https://github.com/yoos/leap.vim)
 * [Railscasts](https://github.com/jpo/vim-railscasts-theme)
 * [Rubyblue](https://github.com/jlong/rubyblue)
 * [Wombat](https://github.com/vim-scripts/Wombat)
