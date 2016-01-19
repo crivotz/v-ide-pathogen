@@ -45,6 +45,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-repeat](https://github.com/tpope/vim-repeat.git): enable repeating supported plugin maps with .
 * [rainbow parentheses improved](https://github.com/luochen1990/rainbow): help you read complex code by showing diff level of parentheses in diff color. 
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim 
+* [vim-endwise](https://github.com/tpope/vim-endwise.git): wisely add "end" in ruby, endfunction/endif/more in vim script, etc
 
   
 **COLOR SCHEMES**
