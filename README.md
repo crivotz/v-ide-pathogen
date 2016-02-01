@@ -47,7 +47,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim 
 * [vim-endwise](https://github.com/tpope/vim-endwise.git): wisely add "end" in ruby, endfunction/endif/more in vim script, etc
 
-  
+
 **COLOR SCHEMES**
 * [Molokai](https://github.com/tomasr/molokai)
 * [Vim-hybrid](https://github.com/w0ng/vim-hybrid)
@@ -56,9 +56,11 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Railscasts](https://github.com/jpo/vim-railscasts-theme)
 * [Rubyblue](https://github.com/jlong/rubyblue)
 * [Wombat](https://github.com/vim-scripts/Wombat)
-* [Zenburn](https://github.com/jnurmine/Zenburn)  
-* [Solarized](https://github.com/altercation/vim-colors-solarized)  
-  
+* [Zenburn](https://github.com/jnurmine/Zenburn)
+* [Solarized](https://github.com/altercation/vim-colors-solarized)
+* [Base16](https://github.com/chriskempson/base16-vim)
+* [Tomorrow](https://github.com/chriskempson/tomorrow-theme)
+
 **SYNTAX**
 * CSS
 * Eruby
@@ -69,8 +71,8 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * Ruby
 * SCSS
 * JSON
-  
-**DEPENDENCIES**  
-1. Vim compiled with ruby and lua 
-2. [Exuberant ctags](http://ctags.sourceforge.net)  
+
+**DEPENDENCIES**
+1. Vim compiled with ruby and lua
+2. [Exuberant ctags](http://ctags.sourceforge.net)
 3. Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
