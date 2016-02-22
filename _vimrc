@@ -21,7 +21,7 @@ execute pathogen#helptags()
 " =============================================================================
 if has("gui_running")
   set background=dark
-  color base16-default                               
+  color base16-tomorrow                               
 endif
 
 " =============================================================================
