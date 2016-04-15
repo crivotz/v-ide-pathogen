@@ -1,5 +1,5 @@
 " =============================================================================
-" STARTER
+" NO COMPATIBILITY
 " =============================================================================
 " no compatibility to venerable old Vi
 set nocompatible
@@ -238,6 +238,7 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplete#sources#tags#cache_limit_size = 5000000
+"let g:neocomplete#force_overwrite_completefunc = 1
 
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
@@ -282,13 +283,14 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
+"if !exists('g:neocomplete#force_omni_input_patterns')
+  "let g:neocomplete#force_omni_input_patterns = {}
+"endif
 let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+"let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
-" For perlomni.vim setting.
-" https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " Plugin key-mappings.
@@ -316,36 +318,19 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
 
 " =============================================================================
-" OMNI COMPLETION
+" FILETYPE
 " =============================================================================
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading=1
+"autocmd FileType ruby,eruby let g:rubycomplete_load_gemfile=1
+"autocmd FileType ruby,eruby let g:rubycomplete_use_bundler=1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global=1
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-"autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading=1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-"autocmd FileType ruby let g:rubycomplete_classes_in_global=1
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-" =============================================================================
-" RAINBOW
-" =============================================================================
-let g:rainbow_active = 0
-
-" =============================================================================
-" VIM-TAGS
-" =============================================================================
-let g:vim_tags_auto_generate = 1
-
-" =============================================================================
-" HTML-AutoCloseTag
-" =============================================================================
-if !has('win32') && !has('win64')
-  au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
-else
-  au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
-endif
 
 " =============================================================================
 " SUBTYPES
@@ -361,6 +346,30 @@ augroup END
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " =============================================================================
+" RAINBOW
+" =============================================================================
+let g:rainbow_active = 0
+
+" =============================================================================
+" VIM-TAGS
+" =============================================================================
+let g:vim_tags_auto_generate = 1
+
+" =============================================================================
+" VIM-RUBOCOP
+" =============================================================================
+let g:vimrubocop_keymap = 0
+
+" =============================================================================
+" HTML-AutoCloseTag
+" =============================================================================
+if !has('win32') && !has('win64')
+  au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
+else
+  au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
+endif
+
+" =============================================================================
 " SHORTCUTS
 " =============================================================================
 "<F1> open help
@@ -374,6 +383,7 @@ nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 nmap <leader>bda :bd <C-a> <CR>
+nmap <Leader>r :RuboCop<CR>
 "
 " =============================================================================
 " DISABLED KEYS

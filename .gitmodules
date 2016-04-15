@@ -182,3 +182,11 @@
 	path = vim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
   ignore = untracked
+[submodule "vim/bundle/vim-rvm"]
+	path = vim/bundle/vim-rvm
+	url = https://github.com/tpope/vim-rvm.git
+  ignore = untracked
+[submodule "vim/bundle/vim-rubocop"]
+	path = vim/bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
+  ignore = untracked
