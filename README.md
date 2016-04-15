@@ -46,6 +46,8 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [rainbow parentheses improved](https://github.com/luochen1990/rainbow): help you read complex code by showing diff level of parentheses in diff color. 
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim 
 * [vim-endwise](https://github.com/tpope/vim-endwise.git): wisely add "end" in ruby, endfunction/endif/more in vim script, etc
+* [vim-rubocop](https://github.com/ngmy/vim-rubocop): The Vim RuboCop plugin runs RuboCop and displays the results in Vim
+* [vim-rvm](https://github.com/tpope/vim-rvm): Switch Ruby versions from inside Vim
 
 
 **COLOR SCHEMES**
@@ -73,6 +75,6 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * JSON
 
 **DEPENDENCIES**
-1. Vim compiled with ruby and lua
-2. [Exuberant ctags](http://ctags.sourceforge.net)
-3. Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
+* Vim compiled with ruby and lua
+* [Exuberant ctags](http://ctags.sourceforge.net)
+* Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
