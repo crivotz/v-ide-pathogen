@@ -212,7 +212,15 @@ cmap <S-Insert>		<C-R>+
 " NERDTREE
 " =============================================================================
 let NERDTreeShowBookmarks=1
+
+" =============================================================================
+" NUMBERS
+" =============================================================================
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
+
+" =============================================================================
+" VIM-AIRLINE
+" =============================================================================
 let g:airline_powerline_fonts = 1
 
 " =============================================================================
@@ -286,8 +294,8 @@ endif
 "if !exists('g:neocomplete#force_omni_input_patterns')
   "let g:neocomplete#force_omni_input_patterns = {}
 "endif
-let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 "let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
@@ -313,9 +321,10 @@ endif
 
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#disable_runtime_snippets = { '_' : 1, }
 
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/snippets'
+let g:neosnippet#snippets_directory='~/.vim/snippets/'
 
 " =============================================================================
 " FILETYPE
@@ -384,7 +393,7 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>r :RuboCop<CR>
-"
+
 " =============================================================================
 " DISABLED KEYS
 " =============================================================================
