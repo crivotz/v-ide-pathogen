@@ -120,8 +120,12 @@ set mouse=a
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 " use a different bground color after
-"set textwidth=80
-"set colorcolumn=+1
+set textwidth=80
+set colorcolumn=+1
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
+  autocmd BufEnter * match OverLength /\%82v.*/
+augroup END
 
 " highlight the column the cursor is on
 set cursorcolumn
@@ -212,6 +216,12 @@ cmap <S-Insert>		<C-R>+
 " NERDTREE
 " =============================================================================
 let NERDTreeShowBookmarks=1
+
+" =============================================================================
+" VIM-SIGNATURE
+" =============================================================================
+let g:SignatureMarkTextHLDynamic = 1
+let g:SignatureMarkerTextHLDynamic = 1
 
 " =============================================================================
 " NUMBERS
