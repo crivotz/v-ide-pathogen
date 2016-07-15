@@ -119,13 +119,13 @@ set mouse=a
 " normal backspace key functionality
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
-" use a different bground color after
-set textwidth=80
-set colorcolumn=+1
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-  autocmd BufEnter * match OverLength /\%82v.*/
-augroup END
+"" use a different bground color after
+"set textwidth=80
+"set colorcolumn=+1
+"augroup vimrc_autocmds
+  "autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
+  "autocmd BufEnter * match OverLength /\%82v.*/
+"augroup END
 
 " highlight the column the cursor is on
 set cursorcolumn
