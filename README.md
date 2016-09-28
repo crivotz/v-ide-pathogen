@@ -1,6 +1,6 @@
 # V-ide
 Vim custom configuration, oriented for web developers (rails, ruby, php, html, css, SCSS, javascript).  
-I use this repository mainly to keep track of the changes that I make on my setup Vim.  
+I use this repository mainly to keep track of the changes that I made on my Vim configuration.  
 But I hope that it will be useful to other  
   
 Thanks to the developers of these plugins/color schemes  
