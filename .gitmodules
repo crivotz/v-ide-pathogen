@@ -2,10 +2,6 @@
 	path = vim/bundle/vim-airline
 	url = git://github.com/bling/vim-airline
 	ignore = untracked
-[submodule "vim/bundle/ctrlp"]
-	path = vim/bundle/ctrlp
-	url = git://github.com/kien/ctrlp.vim
-	ignore = untracked
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate
@@ -13,10 +9,6 @@
 [submodule "vim/bundle/vim-gitgutter"]
 	path = vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter
-	ignore = untracked
-[submodule "vim/bundle/neocomplcache"]
-	path = vim/bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.vim
 	ignore = untracked
 [submodule "vim/bundle/neosnippet"]
 	path = vim/bundle/neosnippet
@@ -122,10 +114,6 @@
 	path = vim/bundle/NrrwRgn
 	url = git://github.com/chrisbra/NrrwRgn.git
 	ignore = untracked
-[submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
-	ignore = untracked
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
@@ -193,3 +181,12 @@
 [submodule "vim/bundle/vim-signature"]
 	path = vim/bundle/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
+  ignore = untracked
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+	ignore = untracked
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+	ignore = untracked

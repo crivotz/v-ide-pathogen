@@ -9,8 +9,8 @@ set nocompatible
 " =============================================================================
 " Disabled plugin
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'vim-coffee-script')
-call add(g:pathogen_disabled, 'neocomplcache')
+" Example
+" call add(g:pathogen_disabled, 'vim-coffee-script')
 " Infect
 execute pathogen#infect()
 " Generate helptags
@@ -21,7 +21,7 @@ execute pathogen#helptags()
 " =============================================================================
 if has("gui_running")
   set background=dark
-  color base16-tomorrow                               
+  color base16-tomorrow-night                               
 endif
 
 " =============================================================================
@@ -218,6 +218,13 @@ cmap <S-Insert>		<C-R>+
 let NERDTreeShowBookmarks=1
 
 " =============================================================================
+" NERDCOMMENTER
+" =============================================================================
+let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDCompactSexyComs = 1
+
+" =============================================================================
 " VIM-SIGNATURE
 " =============================================================================
 let g:SignatureMarkTextHLDynamic = 1
@@ -232,6 +239,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 " VIM-AIRLINE
 " =============================================================================
 let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_tomorrow'
 
 " =============================================================================
 " SYNTASTIClimittext
@@ -378,6 +386,7 @@ let g:vim_tags_auto_generate = 1
 " VIM-RUBOCOP
 " =============================================================================
 let g:vimrubocop_keymap = 0
+let g:vimrubocop_confi = '.rubocop.yml'
 
 " =============================================================================
 " HTML-AutoCloseTag

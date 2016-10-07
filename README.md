@@ -10,9 +10,10 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 - - - 
 **PLUGIN**
 * [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all
-* [Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
+* [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
+* [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
-* [Ctrlp](https://github.com/kien/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+* [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
 * [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.
 * [Neocomplete](https://github.com/Shougo/neocomplete.vim): Auto-completion system
@@ -38,7 +39,6 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn.git): A Narrow Region Plugin for vim
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script): CoffeeScript support for vim (disabled in vimrc)
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
 * [vim-capslock](https://github.com/tpope/vim-capslock.git): Software capslock (disable hw key via OS)
 * [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim
