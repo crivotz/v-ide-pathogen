@@ -6,7 +6,7 @@ But I hope that it will be useful to other
 Thanks to the developers of these plugins/color schemes  
   
 N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple computers (You can notice it in vimrc) and for a problem with symbolic links I had to rename the configuration file *_vimrc* instead of *.vimrc*  
-![v-ide screenshot](https://github.com/crivotz/v-ide/blob/master/v-ide_screenshot.png)
+![v-ide screenshot](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)
 - - - 
 **PLUGIN**
 * [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all
