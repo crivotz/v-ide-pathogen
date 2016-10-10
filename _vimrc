@@ -10,7 +10,7 @@ set nocompatible
 " Disabled plugin
 let g:pathogen_disabled = []
 " Example
-" call add(g:pathogen_disabled, 'vim-coffee-script')
+call add(g:pathogen_disabled, 'vim-plugin-minibufexpl')
 " Infect
 execute pathogen#infect()
 " Generate helptags
@@ -233,12 +233,13 @@ let g:SignatureMarkerTextHLDynamic = 1
 " =============================================================================
 " NUMBERS
 " =============================================================================
-let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
+let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree', 'ctrlp']
 
 " =============================================================================
 " VIM-AIRLINE
 " =============================================================================
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16_tomorrow'
 
 " =============================================================================
@@ -390,6 +391,16 @@ let g:vimrubocop_keymap = 0
 let g:vimrubocop_confi = '.rubocop.yml'
 
 " =============================================================================
+" CTRLP
+" =============================================================================
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+\}
+let g:ctrlp_working_path_mode = 'r'
+
+
+" =============================================================================
 " HTML-AutoCloseTag
 " =============================================================================
 if !has('win32') && !has('win64')
@@ -413,6 +424,8 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>r :RuboCop<CR>
+nmap <Leader>p :CtrlP<CR>
+nmap <Leader>bb :CtrlPBuffer<CR>
 
 " =============================================================================
 " DISABLED KEYS
