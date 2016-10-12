@@ -186,3 +186,7 @@
 	path = vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
 	ignore = untracked
+[submodule "vim/bundle/tmuxline"]
+	path = vim/bundle/tmuxline
+	url = https://github.com/edkolev/tmuxline.vim.git
+	ignore = untracked
