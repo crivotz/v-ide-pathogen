@@ -10,6 +10,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 - - - 
 **PLUGIN**
 * [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all
+* [ack](https://github.com/mileszs/ack.vim.git): Vim plugin for the Perl module / CLI script 'ack'
 * [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
@@ -78,4 +79,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 **DEPENDENCIES**
 * Vim compiled with ruby and lua
 * [Exuberant ctags](http://ctags.sourceforge.net)
+
+**SUGGESTION**
 * Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))
+* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster
