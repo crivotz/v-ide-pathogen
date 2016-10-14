@@ -190,3 +190,7 @@
 	path = vim/bundle/tmuxline
 	url = https://github.com/edkolev/tmuxline.vim.git
 	ignore = untracked
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+	ignore = untracked

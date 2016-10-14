@@ -123,8 +123,8 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 "set textwidth=80
 "set colorcolumn=+1
 "augroup vimrc_autocmds
-  "autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-  "autocmd BufEnter * match OverLength /\%82v.*/
+"autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
+"autocmd BufEnter * match OverLength /\%82v.*/
 "augroup END
 
 " highlight the column the cursor is on
@@ -211,6 +211,13 @@ map <C-V>		"+gP
 map <S-Insert>		"+gP
 cmap <C-V>		<C-R>+
 cmap <S-Insert>		<C-R>+
+
+" =============================================================================
+" ACK
+" =============================================================================
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+end
 
 " =============================================================================
 " NERDTREE
@@ -312,7 +319,7 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
 "if !exists('g:neocomplete#force_omni_input_patterns')
-  "let g:neocomplete#force_omni_input_patterns = {}
+"let g:neocomplete#force_omni_input_patterns = {}
 "endif
 "let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
@@ -394,9 +401,9 @@ let g:vimrubocop_confi = '.rubocop.yml'
 " CTRLP
 " =============================================================================
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-\}
+      \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+      \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+      \}
 let g:ctrlp_working_path_mode = 'r'
 
 
