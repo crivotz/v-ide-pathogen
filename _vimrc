@@ -120,12 +120,11 @@ set mouse=a
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 "" use a different bground color after
-"set textwidth=80
-"set colorcolumn=+1
-"augroup vimrc_autocmds
-"autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-"autocmd BufEnter * match OverLength /\%82v.*/
-"augroup END
+set textwidth=80
+"" Highlight column 81
+set colorcolumn=+1
+"" Highlight from column 81
+" execute "set colorcolumn=" . join(range(81,335), ',')
 
 " highlight the column the cursor is on
 set cursorcolumn
