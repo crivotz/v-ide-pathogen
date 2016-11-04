@@ -430,8 +430,9 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
-nmap <Leader>p :CtrlP<CR>
+nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :CtrlPBuffer<CR>
+nmap <Leader>p :CtrlP<CR>
 
 " =============================================================================
 " DISABLED KEYS
