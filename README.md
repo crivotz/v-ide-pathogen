@@ -50,6 +50,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-endwise](https://github.com/tpope/vim-endwise.git): wisely add "end" in ruby, endfunction/endif/more in vim script, etc
 * [vim-rvm](https://github.com/tpope/vim-rvm): Switch Ruby versions from inside Vim
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks
+* [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines
 
 
 **COLOR SCHEMES**
