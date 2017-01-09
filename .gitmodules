@@ -198,3 +198,7 @@
 	path = vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
 	ignore = untracked
+[submodule "vim/bundle/far"]
+	path = vim/bundle/far
+	url = https://github.com/brooth/far.vim.git
+	ignore = untracked

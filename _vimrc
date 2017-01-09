@@ -249,7 +249,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16_tomorrow'
 
 " =============================================================================
-" SYNTASTIClimittext
+" SYNTASTIC
 " =============================================================================
 "let g:syntastic_enable_highlighting = 1
 "let g:syntastic_auto_loc_list = 1
