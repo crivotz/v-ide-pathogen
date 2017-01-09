@@ -54,6 +54,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-rvm](https://github.com/tpope/vim-rvm): Switch Ruby versions from inside Vim  
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks  
 * [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines  
+* [far](https://github.com/brooth/far.vim): Find and replace vim plugin  
   
 **COLOR SCHEMES**  
 * [Molokai](https://github.com/tomasr/molokai)  
