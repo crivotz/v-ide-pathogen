@@ -17,11 +17,13 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " =============================================================================
-" SET THE GUI COLOR SCHEME
+" SET THE GUI COLOR SCHEME - BASE16-SHELL
 " =============================================================================
-if has("gui_running")
-  set background=dark
-  color base16-tomorrow-night                               
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+else
+  color base16-tomorrow-night
 endif
 
 " =============================================================================
@@ -40,8 +42,6 @@ elseif has('macunix')
   set fuoptions=maxvert,maxhorz
   set guifont=Hack\:h11
 elseif has('unix')
-  "source $VIMRUNTIME/vimrc_example.vim
-  "source $VIMRUNTIME/mswin.vim
   "set lines=999 columns=999
   "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
   set guifont=Hack\ 9
@@ -368,6 +368,14 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " =============================================================================
+" FUNCTION
+" =============================================================================
+function RunWith (command)
+  execute "w"
+  execute "!clear;time " . a:command . " " . expand("%")
+endfunction
+
+" =============================================================================
 " SUBTYPES
 " =============================================================================
 " Ruby
@@ -415,7 +423,6 @@ let g:ctrlp_custom_ignore = {
       \}
 let g:ctrlp_working_path_mode = 'r'
 
-
 " =============================================================================
 " HTML-AutoCloseTag
 " =============================================================================
@@ -438,6 +445,7 @@ nmap <F6> :Errors<CR>
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
+autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
