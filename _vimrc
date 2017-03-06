@@ -32,7 +32,7 @@ endif
 " =============================================================================
 if has('win32') || has('win64')
   behave mswin
-  set guifont=HacHackh9
+  set guifont=Hack\:9
   au GUIEnter * simalt ~n
 elseif has('macunix')
   set guifont=Hack\:h11
