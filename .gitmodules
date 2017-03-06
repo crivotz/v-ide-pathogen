@@ -206,3 +206,7 @@
 	path = vim/bundle/vim-airline-clock
 	url = https://github.com/enricobacis/vim-airline-clock.git
 	ignore = untracked
+[submodule "vim/bundle/vim-rooter"]
+	path = vim/bundle/vim-rooter
+	url = https://github.com/airblade/vim-rooter
+	ignore = untracked

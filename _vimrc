@@ -20,6 +20,7 @@ execute pathogen#helptags()
 " SET THE GUI COLOR SCHEME - BASE16-SHELL
 " =============================================================================
 if filereadable(expand("~/.vimrc_background"))
+  set t_Co=256
   let base16colorspace=256
   source ~/.vimrc_background
 else
@@ -30,20 +31,12 @@ endif
 " CHECK OS
 " =============================================================================
 if has('win32') || has('win64')
-  source $VIMRUNTIME/vimrc_example.vim
-  source $VIMRUNTIME/mswin.vim
   behave mswin
-  set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\:h9
+  set guifont=HacHackh9
   au GUIEnter * simalt ~n
 elseif has('macunix')
-  "set transparency=5
-  "au GUIEnter * set fullscreen
-  "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\:h11
-  set fuoptions=maxvert,maxhorz
   set guifont=Hack\:h11
 elseif has('unix')
-  "set lines=999 columns=999
-  "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 
   set guifont=Hack\ 9
 endif
 
@@ -120,7 +113,8 @@ set mouse=a
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 "" use a different bground color after
-set textwidth=80
+" set textwidth=80
+
 "" Highlight column 81
 set colorcolumn=+1
 "" Highlight from column 81
@@ -194,6 +188,19 @@ set nojoinspaces
 " show window title
 set title
 
+" set default spell to it
+set spelllang=it
+
+" change cursor for term
+if exists('$TMUX')
+  if &term =~ "^screen"
+    autocmd VimEnter * silent !echo -ne "\033Ptmux;\033\033]12;7\007\033\\"
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]12;5\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]12;7\x7\<Esc>\\"
+    autocmd VimLeave * silent !echo -ne "\033Ptmux;\033\033]12;14\007\033\\"
+  end
+end
+"
 " =============================================================================
 " WINDOWS BEHAVIOR
 " =============================================================================
@@ -366,6 +373,7 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 " =============================================================================
 " FUNCTION
@@ -373,6 +381,34 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 function RunWith (command)
   execute "w"
   execute "!clear;time " . a:command . " " . expand("%")
+endfunction
+
+" EITHER blink the line containing the match...
+" function! HLNext (blinktime)
+" set invcursorline
+" redraw
+" exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+" set invcursorline
+" redraw
+" endfunction
+
+" OR ELSE ring the match in red...
+function! HLNext (blinktime)
+  highlight RedOnRed ctermfg=red ctermbg=red
+  let [bufnum, lnum, col, off] = getpos('.')
+  let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+  echo matchlen
+  let ring_pat = (lnum > 1 ? '\%'.(lnum-1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.\|' : '')
+        \ . '\%'.lnum.'l\%>'.max([col-4,1]) .'v\%<'.col.'v.'
+        \ . '\|'
+        \ . '\%'.lnum.'l\%>'.max([col+matchlen-1,1]) .'v\%<'.(col+matchlen+3).'v.'
+        \ . '\|'
+        \ . '\%'.(lnum+1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.'
+  let ring = matchadd('RedOnRed', ring_pat, 101)
+  redraw
+  exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+  call matchdelete(ring)
+  redraw
 endfunction
 
 " =============================================================================
@@ -415,6 +451,12 @@ let g:vimrubocop_keymap = 0
 let g:vimrubocop_confi = '.rubocop.yml'
 
 " =============================================================================
+" VIM-ROOTER
+" =============================================================================
+let g:rooter_silent_chdir = 1
+let g:rooter_use_lcd = 1
+
+" =============================================================================
 " CTRLP
 " =============================================================================
 let g:ctrlp_custom_ignore = {
@@ -446,11 +488,17 @@ nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
+nnoremap <silent> n n:call HLNext(0.4)<cr>
+nnoremap <silent> N N:call HLNext(0.4)<cr>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :CtrlPBuffer<CR>
 nmap <Leader>p :CtrlP<CR>
+nmap <silent> <Leader>sp :set spell!<CR>
+" swap for IT keyboard (for US use : instead of .)
+" nnoremap  .  :
+" nnoremap  :  .
 
 " =============================================================================
 " DISABLED KEYS
