@@ -55,9 +55,8 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks  
 * [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines  
 * [far](https://github.com/brooth/far.vim): Find and replace vim plugin  
-* [vim-airline-clock](https://github.com/enricobacis/vim-airline-clock): vim-airline clock extension - for people that easily loose the sense of time in fullscreen vim sessions  
-
-
+* [vim-airline-clock](https://github.com/enricobacis/vim-airline-clock): vim-airline clock extension - for people that easily loose the sense of time in fullscreen vim sessions  
+* [vim-rooter](https://github.com/airblade/vim-rooter): Change Vim wd to project root (identified by presence of known directory or file)  
   
 **COLOR SCHEMES**  
 * [Molokai](https://github.com/tomasr/molokai)  
