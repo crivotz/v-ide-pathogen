@@ -24,7 +24,7 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 else
-  color base16-tomorrow-night
+  color base16-default-dark
 endif
 
 " =============================================================================
@@ -74,7 +74,7 @@ set laststatus=2
 set nu                                      
 
 " treat all numbers as decimals (1 - 10)
-set nrformats=
+set nrformats-=octal
 
 " allow hidden buffer
 set hidden                                
@@ -101,7 +101,9 @@ set fileformat=unix
 set nobackup
 set nowritebackup
 set noswapfile 
-set viminfo="NONE"
+if !empty(&viminfo)
+  set viminfo^=!
+endif
 
 " no automatically save on buffer switch
 set noautowrite
@@ -138,6 +140,16 @@ set softtabstop=2
 " Use space for a <Tab>.
 set expandtab                               
 set smarttab                                
+set complete-=i
+set ttimeout
+set ttimeoutlen=100
+set ruler
+set wildmenu
+set autoread
+
+if has('path_extra')
+  setglobal tags-=./tags tags-=./tags; tags^=./tags;
+endif
 
 " folding options
 set foldmethod=indent
@@ -192,14 +204,14 @@ set title
 set spelllang=it
 
 " change cursor for term
-if exists('$TMUX')
-  if &term =~ "^screen"
-    autocmd VimEnter * silent !echo -ne "\033Ptmux;\033\033]12;7\007\033\\"
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]12;5\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]12;7\x7\<Esc>\\"
-    autocmd VimLeave * silent !echo -ne "\033Ptmux;\033\033]12;14\007\033\\"
-  end
-end
+" if exists('$TMUX')
+  " if &term =~ '^xterm'
+    " autocmd VimEnter * silent !echo -ne '\033Ptmux;\033\033]12;7\007\033\\'
+    " let &t_SI = '\<Esc>Ptmux;\<Esc>\<Esc>]12;5\x7\<Esc>\\'
+    " let &t_EI = '\<Esc>Ptmux;\<Esc>\<Esc>]12;7\x7\<Esc>\\'
+    " autocmd VimLeave * silent !echo -ne '\033Ptmux;\033\033]12;14\007\033\\'
+  " end
+" end
 "
 " =============================================================================
 " WINDOWS BEHAVIOR
@@ -253,7 +265,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree', 'ctrlp']
 " =============================================================================
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='base16_tomorrow'
+let g:airline_theme='base16'
 
 " =============================================================================
 " SYNTASTIC
