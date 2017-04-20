@@ -213,3 +213,8 @@
 [submodule "vim/bundle/startuptime"]
 	path = vim/bundle/startuptime
 	url = http://github.com/tweekmonster/startuptime.vim
+	ignore = untracked
+[submodule "vim/bundle/vimux"]
+	path = vim/bundle/vimux
+	url = https://github.com/benmills/vimux.git
+	ignore = untracked

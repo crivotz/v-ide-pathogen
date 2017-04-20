@@ -507,6 +507,7 @@ nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :CtrlPBuffer<CR>
 nmap <Leader>p :CtrlP<CR>
+nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 " swap for IT keyboard (for US use : instead of .)
 " nnoremap  .  :
