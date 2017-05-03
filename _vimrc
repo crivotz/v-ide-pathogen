@@ -39,8 +39,10 @@ if has('win32') || has('win64')
   au GUIEnter * simalt ~n
 elseif has('macunix')
   set guifont=Hack\:h11
+  set rtp+=/usr/local/opt/fzf
 elseif has('unix')
   set guifont=Hack\ 9
+  set rtp+=~/.fzf
 endif
 
 " =============================================================================
@@ -205,9 +207,6 @@ set title
 
 " set default spell to it
 set spelllang=it
-
-" FZF
-set rtp+=~/.fzf
 
 " change cursor for term
 " if exists('$TMUX')
