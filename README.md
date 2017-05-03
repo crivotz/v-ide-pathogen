@@ -18,7 +18,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline  
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration  
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar  
-* [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
+* [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim. (Disabled)  
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.  
 * [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.  
 * [Neocomplete](https://github.com/Shougo/neocomplete.vim): Auto-completion system  
@@ -29,9 +29,9 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure  
 * [Abolish](https://github.com/tpope/vim-abolish): easily search for, substitute, and abbreviate multiple variants of a word  
 * [Matchit](https://github.com/tmhedberg/matchit): extended % matching for HTML, LaTeX, and many other languages  
-* [Minibufexpl](https://github.com/techlivezheng/vim-plugin-minibufexpl): Elegant buffer explorer  
+* [Minibufexpl](https://github.com/techlivezheng/vim-plugin-minibufexpl): Elegant buffer explorer (Disabled)  
 * [NERD_Commenter](https://github.com/scrooloose/nerdcommenter): intensely orgasmic commenting  
-* [NERD_Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin  
+* [NERD_Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin (Disabled)  
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in  
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')  
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
@@ -58,6 +58,8 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-airline-clock](https://github.com/enricobacis/vim-airline-clock): vim-airline clock extension - for people that easily loose the sense of time in fullscreen vim sessions  
 * [vim-rooter](https://github.com/airblade/vim-rooter): Change Vim wd to project root (identified by presence of known directory or file)  
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux   
+* [bufexplorer](https://github.com/jlanzarotta/bufexplorer): BufExplorer Plugin for Vim (Disabled)  
+* [fzf.vim](https://github.com/junegunn/fzf.vim): fzf loves vim  
   
 **COLOR SCHEMES**  
 * [Molokai](https://github.com/tomasr/molokai)  
