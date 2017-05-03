@@ -10,7 +10,10 @@ set nocompatible
 " Disabled plugin
 let g:pathogen_disabled = []
 " Example
+call add(g:pathogen_disabled, 'nerdtree')
 call add(g:pathogen_disabled, 'vim-plugin-minibufexpl')
+call add(g:pathogen_disabled, 'ctrlp')
+call add(g:pathogen_disabled, 'bufexplorer')
 " Infect
 execute pathogen#infect()
 " Generate helptags
@@ -203,6 +206,9 @@ set title
 " set default spell to it
 set spelllang=it
 
+" FZF
+set rtp+=~/.fzf
+
 " change cursor for term
 " if exists('$TMUX')
   " if &term =~ '^xterm'
@@ -238,9 +244,19 @@ if executable('ag')
 end
 
 " =============================================================================
+" NETRW
+" =============================================================================
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" let g:netrw_browse_split = 4
+" let g:netrw_altv = 1
+" let g:netrw_winsize = 25
+
+" =============================================================================
 " NERDTREE
 " =============================================================================
-let NERDTreeShowBookmarks=1
+" let NERDTreeShowBookmarks=1
 
 " =============================================================================
 " NERDCOMMENTER
@@ -258,7 +274,7 @@ let g:SignatureMarkerTextHLDynamic = 1
 " =============================================================================
 " NUMBERS
 " =============================================================================
-let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree', 'ctrlp']
+let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'netrw', 'nerdtree', 'ctrlp']
 
 " =============================================================================
 " VIM-AIRLINE
@@ -471,11 +487,11 @@ let g:rooter_use_lcd = 1
 " =============================================================================
 " CTRLP
 " =============================================================================
-let g:ctrlp_custom_ignore = {
-      \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-      \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-      \}
-let g:ctrlp_working_path_mode = 'r'
+" let g:ctrlp_custom_ignore = {
+      " \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+      " \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+      " \}
+" let g:ctrlp_working_path_mode = 'r'
 
 " =============================================================================
 " HTML-AutoCloseTag
@@ -496,7 +512,8 @@ map <F4> :set list! list? <CR>
 " if ctrlp is open <F5> refresh else
 nnoremap <F5> :GundoToggle<CR>
 nmap <F6> :Errors<CR>
-nmap <F7> :NERDTree<CR>
+" nmap <F7> :NERDTree<CR>
+nmap <F7> :Explore<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
@@ -505,8 +522,13 @@ nnoremap <silent> N N:call HLNext(0.4)<cr>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
-nmap <Leader>bb :CtrlPBuffer<CR>
-nmap <Leader>p :CtrlP<CR>
+nmap <Leader>bb :Buffers<CR>
+nmap <Leader>p :FZF<CR>
+nmap <Leader>a :Ag 
+nmap <Leader>g :GFiles?<CR> 
+" nmap <Leader>bb :BufExplorer<CR>
+" nmap <Leader>bb :CtrlPBuffer<CR>
+" nmap <Leader>p :CtrlP<CR>
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 " swap for IT keyboard (for US use : instead of .)

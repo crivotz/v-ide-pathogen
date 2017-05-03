@@ -218,3 +218,11 @@
 	path = vim/bundle/vimux
 	url = https://github.com/benmills/vimux.git
 	ignore = untracked
+[submodule "vim/bundle/bufexplorer"]
+	path = vim/bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer.git
+	ignore = untracked
+[submodule "vim/bundle/fzf"]
+	path = vim/bundle/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+	ignore = untracked
