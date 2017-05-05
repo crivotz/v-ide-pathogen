@@ -493,6 +493,14 @@ let g:rooter_use_lcd = 1
 " let g:ctrlp_working_path_mode = 'r'
 
 " =============================================================================
+" VIM-SMOOTH-SCROLL
+" =============================================================================
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+
+" =============================================================================
 " HTML-AutoCloseTag
 " =============================================================================
 if !has('win32') && !has('win64')

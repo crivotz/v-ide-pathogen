@@ -226,3 +226,7 @@
 	path = vim/bundle/fzf
 	url = https://github.com/junegunn/fzf.vim.git
 	ignore = untracked
+[submodule "vim/bundle/vim-smooth-scroll"]
+	path = vim/bundle/vim-smooth-scroll
+	url = https://github.com/terryma/vim-smooth-scroll.git
+	ignore = untracked
