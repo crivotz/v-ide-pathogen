@@ -11,6 +11,7 @@ set nocompatible
 let g:pathogen_disabled = []
 " Example
 call add(g:pathogen_disabled, 'nerdtree')
+call add(g:pathogen_disabled, 'nerdcommenter')
 call add(g:pathogen_disabled, 'vim-plugin-minibufexpl')
 call add(g:pathogen_disabled, 'ctrlp')
 call add(g:pathogen_disabled, 'bufexplorer')
@@ -260,9 +261,9 @@ let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " =============================================================================
 " NERDCOMMENTER
 " =============================================================================
-let g:NERDSpaceDelims = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDCompactSexyComs = 1
+" let g:NERDSpaceDelims = 1
+" let g:NERDTrimTrailingWhitespace = 1
+" let g:NERDCompactSexyComs = 1
 
 " =============================================================================
 " VIM-SIGNATURE
