@@ -11,7 +11,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
   
 - - -  
   
-ACTIVE **PLUGINS**  
+**ACTIVE PLUGINS**  
 * [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all  
 * [ack](https://github.com/mileszs/ack.vim.git): Vim plugin for the Perl module / CLI script 'ack'  
 * [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air  
@@ -59,7 +59,7 @@ ACTIVE **PLUGINS**
 * [startuptime](https://github.com/tweekmonster/startuptime.vim): Breakdown Vim's --startuptime output  
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out  
   
-DISABLED **PLUGINS**  
+**DISABLED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer): BufExplorer Plugin for Vim  
 * [Minibufexpl](https://github.com/techlivezheng/vim-plugin-minibufexpl): Elegant buffer explorer  
