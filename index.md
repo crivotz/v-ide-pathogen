@@ -60,6 +60,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux   
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer): BufExplorer Plugin for Vim (Disabled)  
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf loves vim  
+* [vim-smooth-scroll](https://github.com/terryma/vim-smooth-scroll): Make scrolling in Vim more pleasant  
   
 **COLOR SCHEMES**  
 * [Molokai](https://github.com/tomasr/molokai)  
