@@ -42,18 +42,6 @@
 	path = vim/bundle/matchit
 	url = git://github.com/tmhedberg/matchit
 	ignore = untracked
-[submodule "vim/bundle/vim-plugin-minibufexpl"]
-	path = vim/bundle/vim-plugin-minibufexpl
-	url = git://github.com/techlivezheng/vim-plugin-minibufexpl
-	ignore = untracked
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter
-	ignore = untracked
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree
-	ignore = untracked
 [submodule "vim/bundle/numbers"]
 	path = vim/bundle/numbers
 	url = git://github.com/myusuf3/numbers.vim
@@ -178,10 +166,6 @@
 	path = vim/bundle/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
   ignore = untracked
-[submodule "vim/bundle/ctrlp"]
-	path = vim/bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
-	ignore = untracked
 [submodule "vim/bundle/vim-airline-themes"]
 	path = vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
@@ -217,10 +201,6 @@
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = https://github.com/benmills/vimux.git
-	ignore = untracked
-[submodule "vim/bundle/bufexplorer"]
-	path = vim/bundle/bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer.git
 	ignore = untracked
 [submodule "vim/bundle/fzf"]
 	path = vim/bundle/fzf

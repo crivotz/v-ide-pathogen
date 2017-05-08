@@ -59,7 +59,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [startuptime](https://github.com/tweekmonster/startuptime.vim): Breakdown Vim's --startuptime output  
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out  
   
-**DISABLED PLUGINS**  
+**REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer): BufExplorer Plugin for Vim  
 * [Minibufexpl](https://github.com/techlivezheng/vim-plugin-minibufexpl): Elegant buffer explorer  
