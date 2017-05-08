@@ -7,18 +7,12 @@ set nocompatible
 " =============================================================================
 " PATHOGEN
 " =============================================================================
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" Example
-call add(g:pathogen_disabled, 'nerdtree')
-call add(g:pathogen_disabled, 'nerdcommenter')
-call add(g:pathogen_disabled, 'vim-plugin-minibufexpl')
-call add(g:pathogen_disabled, 'ctrlp')
-call add(g:pathogen_disabled, 'bufexplorer')
+" call add(g:pathogen_disabled, 'plugin-name')
 " Infect
 execute pathogen#infect()
-" Generate helptags
-execute pathogen#helptags()
 
 " =============================================================================
 " SET THE GUI COLOR SCHEME - BASE16-SHELL
@@ -34,16 +28,16 @@ endif
 " =============================================================================
 " CHECK OS
 " =============================================================================
-if has('win32') || has('win64')
-  behave mswin
-  set guifont=Hack\:9
-  au GUIEnter * simalt ~n
+if has('unix')
+  set guifont=Hack\ 9
+  set rtp+=~/.fzf
 elseif has('macunix')
   set guifont=Hack\:h11
   set rtp+=/usr/local/opt/fzf
-elseif has('unix')
-  set guifont=Hack\ 9
-  set rtp+=~/.fzf
+elseif has('win32') || has('win64')
+  behave mswin
+  set guifont=Hack\:9
+  au GUIEnter * simalt ~n
 endif
 
 " =============================================================================
@@ -129,10 +123,10 @@ set colorcolumn=+1
 " execute "set colorcolumn=" . join(range(81,335), ',')
 
 " highlight the column the cursor is on
-set cursorcolumn
+" set cursorcolumn
 
 " highlight the line the cursor is on
-set cursorline
+" set cursorline
 
 " no undo files
 set noundofile
@@ -209,16 +203,6 @@ set title
 " set default spell to it
 set spelllang=it
 
-" change cursor for term
-" if exists('$TMUX')
-  " if &term =~ '^xterm'
-    " autocmd VimEnter * silent !echo -ne '\033Ptmux;\033\033]12;7\007\033\\'
-    " let &t_SI = '\<Esc>Ptmux;\<Esc>\<Esc>]12;5\x7\<Esc>\\'
-    " let &t_EI = '\<Esc>Ptmux;\<Esc>\<Esc>]12;7\x7\<Esc>\\'
-    " autocmd VimLeave * silent !echo -ne '\033Ptmux;\033\033]12;14\007\033\\'
-  " end
-" end
-"
 " =============================================================================
 " WINDOWS BEHAVIOR
 " =============================================================================
@@ -254,18 +238,6 @@ let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " let g:netrw_winsize = 25
 
 " =============================================================================
-" NERDTREE
-" =============================================================================
-" let NERDTreeShowBookmarks=1
-
-" =============================================================================
-" NERDCOMMENTER
-" =============================================================================
-" let g:NERDSpaceDelims = 1
-" let g:NERDTrimTrailingWhitespace = 1
-" let g:NERDCompactSexyComs = 1
-
-" =============================================================================
 " VIM-SIGNATURE
 " =============================================================================
 let g:SignatureMarkTextHLDynamic = 1
@@ -274,7 +246,7 @@ let g:SignatureMarkerTextHLDynamic = 1
 " =============================================================================
 " NUMBERS
 " =============================================================================
-let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'netrw', 'nerdtree', 'ctrlp']
+let g:numbers_exclude = ['tagbar', 'gundo', 'netrw']
 
 " =============================================================================
 " VIM-AIRLINE
@@ -411,34 +383,6 @@ function RunWith (command)
   execute "!clear;time " . a:command . " " . expand("%")
 endfunction
 
-" EITHER blink the line containing the match...
-" function! HLNext (blinktime)
-" set invcursorline
-" redraw
-" exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-" set invcursorline
-" redraw
-" endfunction
-
-" OR ELSE ring the match in red...
-function! HLNext (blinktime)
-  highlight RedOnRed ctermfg=red ctermbg=red
-  let [bufnum, lnum, col, off] = getpos('.')
-  let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-  echo matchlen
-  let ring_pat = (lnum > 1 ? '\%'.(lnum-1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.\|' : '')
-        \ . '\%'.lnum.'l\%>'.max([col-4,1]) .'v\%<'.col.'v.'
-        \ . '\|'
-        \ . '\%'.lnum.'l\%>'.max([col+matchlen-1,1]) .'v\%<'.(col+matchlen+3).'v.'
-        \ . '\|'
-        \ . '\%'.(lnum+1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.'
-  let ring = matchadd('RedOnRed', ring_pat, 101)
-  redraw
-  exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-  call matchdelete(ring)
-  redraw
-endfunction
-
 " =============================================================================
 " SUBTYPES
 " =============================================================================
@@ -485,15 +429,6 @@ let g:rooter_silent_chdir = 1
 let g:rooter_use_lcd = 1
 
 " =============================================================================
-" CTRLP
-" =============================================================================
-" let g:ctrlp_custom_ignore = {
-      " \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-      " \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-      " \}
-" let g:ctrlp_working_path_mode = 'r'
-
-" =============================================================================
 " VIM-SMOOTH-SCROLL
 " =============================================================================
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
@@ -510,6 +445,12 @@ else
   au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
 endif
 
+
+nnoremap <silent> <leader>k :call InterestingWords('n')<cr>
+nnoremap <silent> <leader>K :call UncolorAllWords()<cr>
+
+nnoremap <silent> n :call WordNavigation('forward')<cr>
+nnoremap <silent> N :call WordNavigation('backward')<cr>
 " =============================================================================
 " SHORTCUTS
 " =============================================================================
@@ -520,13 +461,10 @@ map <F4> :set list! list? <CR>
 " if ctrlp is open <F5> refresh else
 nnoremap <F5> :GundoToggle<CR>
 nmap <F6> :Errors<CR>
-" nmap <F7> :NERDTree<CR>
 nmap <F7> :Explore<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowToggle<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
-nnoremap <silent> n n:call HLNext(0.4)<cr>
-nnoremap <silent> N N:call HLNext(0.4)<cr>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
@@ -534,14 +472,8 @@ nmap <Leader>bb :Buffers<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>a :Ag 
 nmap <Leader>g :GFiles?<CR> 
-" nmap <Leader>bb :BufExplorer<CR>
-" nmap <Leader>bb :CtrlPBuffer<CR>
-" nmap <Leader>p :CtrlP<CR>
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
-" swap for IT keyboard (for US use : instead of .)
-" nnoremap  .  :
-" nnoremap  :  .
 
 " =============================================================================
 " DISABLED KEYS

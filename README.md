@@ -58,6 +58,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-smooth-scroll](https://github.com/terryma/vim-smooth-scroll): Make scrolling in Vim more pleasant  
 * [startuptime](https://github.com/tweekmonster/startuptime.vim): Breakdown Vim's --startuptime output  
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out  
+* [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
