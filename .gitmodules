@@ -130,10 +130,6 @@
 	path = vim/bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
   ignore = untracked
-[submodule "vim/bundle/rainbow"]
-	path = vim/bundle/rainbow
-	url = https://github.com/luochen1990/rainbow.git
-  ignore = untracked
 [submodule "vim/bundle/emmet-vim"]
 	path = vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
@@ -221,3 +217,12 @@
 [submodule "vim/bundle/vim-pathogen"]
 	path = vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+	ignore = untracked
+[submodule "vim/bundle/rainbow_parentheses"]
+	path = vim/bundle/rainbow_parentheses
+	url = https://github.com/junegunn/rainbow_parentheses.vim.git
+	ignore = untracked
+[submodule "vim/bundle/vim-interestingwords"]
+	path = vim/bundle/vim-interestingwords
+	url = https://github.com/lfv89/vim-interestingwords.git
+	ignore = untracked

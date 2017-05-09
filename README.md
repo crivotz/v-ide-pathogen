@@ -44,7 +44,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-capslock](https://github.com/tpope/vim-capslock.git): Software capslock (disable hw key via OS)  
 * [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim  
 * [vim-repeat](https://github.com/tpope/vim-repeat.git): enable repeating supported plugin maps with.  
-* [rainbow parentheses improved](https://github.com/luochen1990/rainbow): help you read complex code by showing diff level of parentheses in diff color.  
+* [rainbow parentheses](https://github.com/junegunn/rainbow_parentheses.vim): Simple Rainbow Parentheses
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim  
 * [vim-endwise](https://github.com/tpope/vim-endwise.git): wisely add "end" in ruby, endfunction/endif/more in vim script, etc  
 * [vim-rvm](https://github.com/tpope/vim-rvm): Switch Ruby versions from inside Vim  
@@ -59,6 +59,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [startuptime](https://github.com/tweekmonster/startuptime.vim): Breakdown Vim's --startuptime output  
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out  
 * [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match  
+* [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  

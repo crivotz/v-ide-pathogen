@@ -404,7 +404,7 @@ let g:vim_json_syntax_conceal = 0
 " =============================================================================
 " RAINBOW
 " =============================================================================
-let g:rainbow_active = 0
+let g:rainbow#pairs =[['(',')'], ['[',']'], ['{','}']]
 
 " =============================================================================
 " INDENTLINE
@@ -445,12 +445,14 @@ else
   au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
 endif
 
-
+" =============================================================================
+" VIM-INTERESTINGWORDS
+" =============================================================================
 nnoremap <silent> <leader>k :call InterestingWords('n')<cr>
 nnoremap <silent> <leader>K :call UncolorAllWords()<cr>
+nnoremap <silent> n n<Plug>SearchIndex:call WordNavigation('forward')<cr>
+nnoremap <silent> N N<Plug>SearchIndex:call WordNavigation('backward')<cr>
 
-nnoremap <silent> n :call WordNavigation('forward')<cr>
-nnoremap <silent> N :call WordNavigation('backward')<cr>
 " =============================================================================
 " SHORTCUTS
 " =============================================================================
@@ -463,7 +465,7 @@ nnoremap <F5> :GundoToggle<CR>
 nmap <F6> :Errors<CR>
 nmap <F7> :Explore<CR>
 nmap <F8> :TagbarToggle<CR>
-nmap <F9> :RainbowToggle<CR>
+nmap <F9> :RainbowParentheses!!<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
 nmap <leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
