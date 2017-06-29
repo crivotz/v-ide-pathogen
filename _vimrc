@@ -226,6 +226,7 @@ cmap <S-Insert>		<C-R>+
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 end
+let g:ack_use_dispatch = 1
 
 " =============================================================================
 " NETRW

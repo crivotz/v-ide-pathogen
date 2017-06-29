@@ -226,3 +226,7 @@
 	path = vim/bundle/vim-interestingwords
 	url = https://github.com/lfv89/vim-interestingwords.git
 	ignore = untracked
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+	ignore = untracked

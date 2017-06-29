@@ -60,6 +60,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out  
 * [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match  
 * [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.  
+* [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
