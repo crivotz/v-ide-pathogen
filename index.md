@@ -93,6 +93,22 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * SCSS  
 * JSON  
   
+**INSTALLATION**
+```console
+git clone --recursive https://github.com/crivotz/v-ide ~/.v-ide
+cd
+ln -s ~/.v-ide/_vimrc .vimrc
+ln -s ~/.v-ide/vim .vim
+ln -s ~/.v-ide/_vimrc_background .vimrc_background
+```  
+**UPDATE**
+```console
+cd
+cd .v-ide
+git pull
+git submodule update --init --recursive
+```  
+  
 **DEPENDENCIES**  
 * Vim compiled with ruby and lua  
 * [Exuberant ctags](http://ctags.sourceforge.net)  
