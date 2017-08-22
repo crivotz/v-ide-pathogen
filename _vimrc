@@ -29,11 +29,16 @@ endif
 " CHECK OS
 " =============================================================================
 if has('unix')
-  set guifont=Hack\ 9
-  set rtp+=~/.fzf
-elseif has('macunix')
-  set guifont=Hack\:h11
-  set rtp+=/usr/local/opt/fzf
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " Do Mac stuff here
+    set guifont=Hack\:h11
+    set rtp+=/usr/local/opt/fzf
+  else
+    set guifont=Hack\ 9
+    set rtp+=~/.fzf
+  endif
+elseif has('mac')
 elseif has('win32') || has('win64')
   behave mswin
   set guifont=Hack\:9
