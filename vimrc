@@ -261,7 +261,8 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'netrw']
 " =============================================================================
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='base16'
+let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
+let g:airline_theme = 'base16'
 
 " =============================================================================
 " SYNTASTIC
@@ -482,6 +483,7 @@ nmap <Leader>bb :Buffers<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>a :Ag 
 nmap <Leader>g :GFiles?<CR> 
+nmap <Leader>gg :Gstatus<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 
