@@ -59,6 +59,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match  
 * [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.  
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
+* [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
@@ -111,6 +112,7 @@ git submodule update --init --recursive
 * Vim compiled with ruby and lua  
 * [Exuberant ctags](http://ctags.sourceforge.net)  
 * [FZF](https://github.com/junegunn/fzf)  
+* [Ranger](http://ranger.nongnu.org)  
   
 **SUGGESTION**  
 * Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))  

@@ -234,16 +234,19 @@ end
 let g:ack_use_dispatch = 1
 
 " =============================================================================
+" RANGER
+" =============================================================================
+let g:ranger_map_keys = 0
+let g:ranger_replace_netrw = 1
+
+" =============================================================================
 " NETRW
 " =============================================================================
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
-let g:netrw_preview = 1
-let g:netrw_alto = 0
-" let g:netrw_browse_split = 4
-" let g:netrw_altv = 1
-" let g:netrw_winsize = 25
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" let g:netrw_preview = 1
+" let g:netrw_alto = 0
 
 " =============================================================================
 " VIM-SIGNATURE
@@ -469,10 +472,9 @@ nnoremap <silent> N N<Plug>SearchIndex:call WordNavigation('backward')<cr>
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
 map <F4> :set list! list? <CR>
-" if ctrlp is open <F5> refresh else
 nnoremap <F5> :GundoToggle<CR>
 nmap <F6> :Errors<CR>
-nmap <F7> :Explore<CR>
+nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowParentheses!!<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>

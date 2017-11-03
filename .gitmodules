@@ -230,3 +230,7 @@
 	path = vim/bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 	ignore = untracked
+[submodule "vim/bundle/ranger"]
+	path = vim/bundle/ranger
+	url = git@github.com:francoiscabrol/ranger.vim.git
+	ignore = untracked
