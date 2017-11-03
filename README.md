@@ -105,7 +105,7 @@ ln -s ~/.v-ide/_vimrc_background .vimrc_background
 cd
 cd .v-ide
 git pull
-git submodule update --init --recursive
+git submodule update --remote --merge
 ```  
   
 **DEPENDENCIES**  
