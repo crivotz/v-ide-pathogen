@@ -5,8 +5,6 @@ But I hope that it will be useful to other
   
 Thanks to the developers of these plugins/color schemes  
   
-N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple computers (You can notice it in vimrc) and for a problem with symbolic links I had to rename the configuration file *_vimrc* instead of *.vimrc* 
-  
 ![v-ide screenshot](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)  
   
 - - -  
@@ -61,6 +59,7 @@ N.B. I keep my configuration of Vim in my Dropbox so I can use on multiple compu
 * [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match  
 * [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.  
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
+* [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
@@ -106,14 +105,15 @@ ln -s ~/.v-ide/_vimrc_background .vimrc_background
 cd
 cd .v-ide
 git pull
-git submodule update --init --recursive
+git submodule update --remote --merge
 ```  
   
 **DEPENDENCIES**  
 * Vim compiled with ruby and lua  
 * [Exuberant ctags](http://ctags.sourceforge.net)  
 * [FZF](https://github.com/junegunn/fzf)  
+* [Ranger](http://ranger.nongnu.org)  
   
 **SUGGESTION**  
 * Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))  
-* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
+* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster   
