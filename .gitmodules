@@ -234,3 +234,7 @@
 	path = vim/bundle/ranger
 	url = git@github.com:francoiscabrol/ranger.vim.git
 	ignore = untracked
+[submodule "vim/bundle/ale"]
+	path = vim/bundle/ale
+	url = git@github.com:w0rp/ale.git
+	ignore = untracked

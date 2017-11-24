@@ -9,7 +9,7 @@ set nocompatible
 " =============================================================================
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
-let g:pathogen_disabled = []
+let g:pathogen_disabled = ['syntastic']
 " call add(g:pathogen_disabled, 'plugin-name')
 " Infect
 execute pathogen#infect()
@@ -234,6 +234,25 @@ end
 let g:ack_use_dispatch = 1
 
 " =============================================================================
+" FZF
+" =============================================================================
+" let g:fzf_commits_log_options = 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+" =============================================================================
 " RANGER
 " =============================================================================
 let g:ranger_map_keys = 0
@@ -266,17 +285,26 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
 let g:airline_theme = 'base16'
+let g:airline#extensions#ale#enabled = 1
 
 " =============================================================================
 " SYNTASTIC
 " =============================================================================
-"let g:syntastic_enable_highlighting = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_loc_list_height = 3
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"" let g:syntastic_enable_highlighting = 1
+"" let g:syntastic_auto_loc_list = 1
+"" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_ruby_checkers = ['rubocop']
+" let g:syntastic_loc_list_height = 3
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
+" =============================================================================
+" ALE
+" =============================================================================
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_enter = 0
+" let g:ale_set_loclist = 0
+" let g:ale_set_quickfix = 1
 
 " =============================================================================
 " NEOCOMPLETE
@@ -473,7 +501,6 @@ nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
 map <F4> :set list! list? <CR>
 nnoremap <F5> :GundoToggle<CR>
-nmap <F6> :Errors<CR>
 nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowParentheses!!<CR>
