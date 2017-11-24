@@ -29,7 +29,6 @@ Thanks to the developers of these plugins/color schemes
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in  
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')  
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
-* [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim  
 * [Vim-css-color](https://github.com/ap/vim-css-color.git): color hex codes and color names  
 * [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists  
 * [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag): Automatically closes HTML tags once you finish typing them  
@@ -60,6 +59,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.  
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
 * [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.  
+* [Ale](https://github.com/w0rp/ale): Asynchronous Lint Engine  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
@@ -67,6 +67,7 @@ Thanks to the developers of these plugins/color schemes
 * [Minibufexpl](https://github.com/techlivezheng/vim-plugin-minibufexpl): Elegant buffer explorer  
 * [NERD_Commenter](https://github.com/scrooloose/nerdcommenter): intensely orgasmic commenting  
 * [NERD_Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin  
+* [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim  
   
 **COLOR SCHEMES**  
 * [Molokai](https://github.com/tomasr/molokai)  
@@ -116,4 +117,4 @@ git submodule update --remote --merge
   
 **SUGGESTION**  
 * Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))  
-* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster   
+* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
