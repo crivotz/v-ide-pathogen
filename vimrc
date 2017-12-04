@@ -286,6 +286,21 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
 let g:airline_theme = 'base16'
 let g:airline#extensions#ale#enabled = 1
+let g:airline_right_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_alt_sep= ''
+let g:airline_left_sep = ''
+
+" =============================================================================
+" TMUXLINE
+" =============================================================================
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '',
+    \ 'right' : '',
+    \ 'right_alt' : '',
+    \ 'space' : ' '}
+" let g:tmuxline_powerline_separators = 0
 
 " =============================================================================
 " SYNTASTIC
