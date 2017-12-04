@@ -95,8 +95,9 @@ Thanks to the developers of these plugins/color schemes
   
 **INSTALLATION**
 ```console
-git clone --recursive https://github.com/crivotz/v-ide ~/.v-ide
-cd
+git clone git://github.com:crivotz/v-ide.git ~/.v-ide
+cd ~.v-ide
+git submodule update --init --recursive
 ln -s ~/.v-ide/_vimrc .vimrc
 ln -s ~/.v-ide/vim .vim
 ln -s ~/.v-ide/_vimrc_background .vimrc_background
