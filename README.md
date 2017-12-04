@@ -116,5 +116,5 @@ git submodule update --remote --merge
 * [Ranger](http://ranger.nongnu.org)  
   
 **SUGGESTION**  
-* Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack) (You can find it inside Fonts folder, for another font take a look to the [Powerline docs](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts))  
+* Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)  
 * [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
