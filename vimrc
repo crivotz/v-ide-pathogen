@@ -284,7 +284,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'netrw']
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
-let g:airline_theme = 'base16_default'
+let g:airline_theme = 'base16'
 let g:airline#extensions#ale#enabled = 1
 let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
@@ -509,7 +509,18 @@ nnoremap <silent> n n<Plug>SearchIndex:call WordNavigation('forward')<cr>
 nnoremap <silent> N N<Plug>SearchIndex:call WordNavigation('backward')<cr>
 
 " =============================================================================
-" SHORTCUTS
+" DEVDOCS
+" =============================================================================
+let g:devdocs_filetype_map = {
+    \   'ruby': 'rails',
+    \   'javascript.js': 'jquery',
+    \ }
+
+" =============================================================================
+" STARTIFY
+" =============================================================================
+let g:startify_bookmarks = ['~/Dev/Aretask', '~/Dev/Fecundo', '~/Dev/RailsStarter']
+
 " =============================================================================
 "<F1> open help
 nmap <F2> :Calendar<CR>
@@ -530,6 +541,7 @@ nmap <Leader>g :GFiles?<CR>
 nmap <Leader>gg :Gstatus<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
+nmap K <Plug>(devdocs-under-cursor)
 
 " =============================================================================
 " DISABLED KEYS

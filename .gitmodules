@@ -234,3 +234,11 @@
 	path = vim/bundle/ale
 	url = git@github.com:w0rp/ale.git
 	ignore = untracked
+[submodule "vim/bundle/devdocs"]
+	path = vim/bundle/devdocs
+	url = git@github.com:rhysd/devdocs.vim.git
+	ignore = untracked
+[submodule "vim/bundle/vim-startify"]
+	path = vim/bundle/vim-startify
+	url = git@github.com:mhinz/vim-startify.git
+	ignore = untracked
