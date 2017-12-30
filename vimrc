@@ -505,8 +505,8 @@ endif
 " =============================================================================
 nnoremap <silent> <leader>k :call InterestingWords('n')<cr>
 nnoremap <silent> <leader>K :call UncolorAllWords()<cr>
-nnoremap <silent> n n<Plug>SearchIndex:call WordNavigation('forward')<cr>
-nnoremap <silent> N N<Plug>SearchIndex:call WordNavigation('backward')<cr>
+nnoremap <silent> n nzz<Plug>SearchIndex:call WordNavigation('forward')<cr>
+nnoremap <silent> N Nzz<Plug>SearchIndex:call WordNavigation('backward')<cr>
 
 " =============================================================================
 " DEVDOCS
@@ -531,12 +531,13 @@ nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowParentheses!!<CR>
 autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
-nmap <leader>bda :bd <C-a> <CR>
+nmap <Leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :Buffers<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>a :Ag 
+nmap <Leader>l :Lines 
 nmap <Leader>g :GFiles?<CR> 
 nmap <Leader>gg :Gstatus<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
