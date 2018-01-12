@@ -35,7 +35,7 @@ if has('unix')
     set guifont=Hack\:h11
     set rtp+=/usr/local/opt/fzf
   else
-    set guifont=Hack\ 9
+    set guifont=Knack\ Nerd\ Font\ 8
     set rtp+=~/.fzf
   endif
 elseif has('mac')
@@ -300,6 +300,7 @@ let g:tmuxline_separators = {
     \ 'right' : '',
     \ 'right_alt' : '',
     \ 'space' : ' '}
+let g:airline#extensions#tmuxline#enabled = 0
 " let g:tmuxline_powerline_separators = 0
 
 " =============================================================================

@@ -242,3 +242,11 @@
 	path = vim/bundle/vim-startify
 	url = git@github.com:mhinz/vim-startify.git
 	ignore = untracked
+[submodule "vim/bundle/vim-devicons"]
+	path = vim/bundle/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git
+	ignore = untracked
+[submodule "vim/bundle/vim-tmux-focus-events"]
+	path = vim/bundle/vim-tmux-focus-events
+	url = git://github.com/tmux-plugins/vim-tmux-focus-events.git
+	ignore = untracked
