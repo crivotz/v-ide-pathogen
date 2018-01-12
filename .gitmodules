@@ -250,3 +250,7 @@
 	path = vim/bundle/vim-tmux-focus-events
 	url = git://github.com/tmux-plugins/vim-tmux-focus-events.git
 	ignore = untracked
+[submodule "vim/bundle/vim-twiggy"]
+	path = vim/bundle/vim-twiggy
+	url = git@github.com:sodapopcan/vim-twiggy.git
+	ignore = untracked

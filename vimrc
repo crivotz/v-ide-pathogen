@@ -9,7 +9,7 @@ set nocompatible
 " =============================================================================
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
-let g:pathogen_disabled = ['syntastic']
+let g:pathogen_disabled = []
 " call add(g:pathogen_disabled, 'plugin-name')
 " Infect
 execute pathogen#infect()
@@ -302,17 +302,6 @@ let g:tmuxline_separators = {
     \ 'space' : ' '}
 let g:airline#extensions#tmuxline#enabled = 0
 " let g:tmuxline_powerline_separators = 0
-
-" =============================================================================
-" SYNTASTIC
-" =============================================================================
-"" let g:syntastic_enable_highlighting = 1
-"" let g:syntastic_auto_loc_list = 1
-"" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_ruby_checkers = ['rubocop']
-" let g:syntastic_loc_list_height = 3
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
 
 " =============================================================================
 " ALE
