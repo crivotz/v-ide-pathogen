@@ -60,6 +60,11 @@ Thanks to the developers of these plugins/color schemes
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
 * [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.  
 * [Ale](https://github.com/w0rp/ale): Asynchronous Lint Engine  
+* [vim-startify](https://github.com/mhinz/vim-startify): The fancy start screen for Vim  
+* [devdocs](https://github.com/rhysd/devdocs.vim): Open devdocs.io from Vim  
+* [vim-devicons](https://github.com/ryanoasis/vim-devicons.git): Adds file type glyphs/icons to popular Vim plugins  
+* [vim-tmux-focus](https://github.com/tmux-plugins/vim-tmux-focus-events.git): Make terminal vim and tmux work better together  
+* [vim-twiggy](https://github.com/sodapopcan/vim-twiggy.git): Git branch management for Vim  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
@@ -112,10 +117,11 @@ git submodule update --remote --merge
   
 **DEPENDENCIES**  
 * Vim compiled with ruby and lua  
+* [BASE16-SHELL](https://github.com/chriskempson/base16-shell)  
 * [Exuberant ctags](http://ctags.sourceforge.net)  
 * [FZF](https://github.com/junegunn/fzf)  
 * [Ranger](http://ranger.nongnu.org)  
   
 **SUGGESTION**  
-* Font: DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)  
+* Font: [Knack Nerd fonts](https://github.com/ryanoasis/nerd-fonts) or DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)  
 * [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
