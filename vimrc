@@ -10,7 +10,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'plugin-name')
+" call add(g:pathogen_disabled, 'neocomplete')
 " Infect
 execute pathogen#infect()
 
@@ -48,6 +48,9 @@ endif
 " =============================================================================
 " SETTINGS
 " =============================================================================
+" Shell
+set shell=/bin/sh
+
 " GUI options
 set guioptions=aAce                         
 
@@ -460,6 +463,7 @@ let g:indentLine_setColors = 0
 " VIM-TAGS
 " =============================================================================
 let g:vim_tags_auto_generate = 1
+let g:vim_tags_use_vim_dispatch = 0
 
 " =============================================================================
 " VIM-RUBOCOP
@@ -482,15 +486,6 @@ noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 " =============================================================================
-" HTML-AutoCloseTag
-" =============================================================================
-if !has('win32') && !has('win64')
-  au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
-else
-  au FileType xhtml,xml so C:\Program Files\Vim\vimfiles\ftplugin\html_autoclosetag.vim
-endif
-
-" =============================================================================
 " VIM-INTERESTINGWORDS
 " =============================================================================
 nnoremap <silent> <leader>k :call InterestingWords('n')<cr>
@@ -507,11 +502,6 @@ let g:devdocs_filetype_map = {
     \ }
 
 " =============================================================================
-" STARTIFY
-" =============================================================================
-let g:startify_bookmarks = ['~/Dev/Aretask', '~/Dev/Fecundo', '~/Dev/RailsStarter']
-
-" =============================================================================
 "<F1> open help
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
@@ -520,7 +510,7 @@ nnoremap <F5> :GundoToggle<CR>
 nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :RainbowParentheses!!<CR>
-autocmd FileType ruby nmap <F11> :call RunWith("ruby")<cr>
+autocmd FileType ruby nmap <F10> :call RunWith("ruby")<cr>
 nmap <Leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
