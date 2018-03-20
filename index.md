@@ -25,18 +25,14 @@ Thanks to the developers of these plugins/color schemes
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss  
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure  
 * [Abolish](https://github.com/tpope/vim-abolish): easily search for, substitute, and abbreviate multiple variants of a word  
-* [Matchit](https://github.com/tmhedberg/matchit): extended % matching for HTML, LaTeX, and many other languages  
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in  
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')  
 * [Surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple  
 * [Vim-css-color](https://github.com/ap/vim-css-color.git): color hex codes and color names  
-* [vim-simple-todo](https://github.com/vitalk/vim-simple-todo): color hex codes and color namesMappings to manage GitHub-like task lists  
-* [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag): Automatically closes HTML tags once you finish typing them  
 * [vim-bundler](https://github.com/tpope/vim-bundler): Lightweight support for Ruby's Bundler  
 * [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values  
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox  
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!  
-* [NrrwRgn](https://github.com/chrisbra/NrrwRgn.git): A Narrow Region Plugin for vim  
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style  
 * [vim-capslock](https://github.com/tpope/vim-capslock.git): Software capslock (disable hw key via OS)  
 * [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim  
@@ -48,7 +44,6 @@ Thanks to the developers of these plugins/color schemes
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks  
 * [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines  
 * [far](https://github.com/brooth/far.vim): Find and replace vim plugin  
-* [vim-airline-clock](https://github.com/enricobacis/vim-airline-clock): vim-airline clock extension - for people that easily loose the sense of time in fullscreen vim sessions  
 * [vim-rooter](https://github.com/airblade/vim-rooter): Change Vim wd to project root (identified by presence of known directory or file)  
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux   
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf loves vim  
@@ -60,7 +55,6 @@ Thanks to the developers of these plugins/color schemes
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.  
 * [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.  
 * [Ale](https://github.com/w0rp/ale): Asynchronous Lint Engine  
-* [vim-startify](https://github.com/mhinz/vim-startify): The fancy start screen for Vim  
 * [devdocs](https://github.com/rhysd/devdocs.vim): Open devdocs.io from Vim  
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons.git): Adds file type glyphs/icons to popular Vim plugins  
 * [vim-tmux-focus](https://github.com/tmux-plugins/vim-tmux-focus-events.git): Make terminal vim and tmux work better together  
