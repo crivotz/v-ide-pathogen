@@ -230,3 +230,7 @@
 	path = vim/bundle/vim-twiggy
 	url = git@github.com:sodapopcan/vim-twiggy.git
 	ignore = untracked
+[submodule "vim/bundle/vim-dadbod"]
+	path = vim/bundle/vim-dadbod
+	url = git@github.com:tpope/vim-dadbod.git
+	ignore = untracked

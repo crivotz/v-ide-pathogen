@@ -59,6 +59,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons.git): Adds file type glyphs/icons to popular Vim plugins  
 * [vim-tmux-focus](https://github.com/tmux-plugins/vim-tmux-focus-events.git): Make terminal vim and tmux work better together  
 * [vim-twiggy](https://github.com/sodapopcan/vim-twiggy.git): Git branch management for Vim  
+* [vim-dadbod](https://github.com/tpope/vim-dadbod): Modern database interface for Vim  
   
 **REMOVED PLUGINS**  
 * [Ctrlp](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim.  
