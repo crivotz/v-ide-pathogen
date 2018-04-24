@@ -1,10 +1,4 @@
 " =============================================================================
-" NO COMPATIBILITY
-" =============================================================================
-" no compatibility to venerable old Vi
-set nocompatible
-
-" =============================================================================
 " PATHOGEN
 " =============================================================================
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -48,104 +42,51 @@ endif
 " =============================================================================
 " SETTINGS
 " =============================================================================
-" Shell
-set shell=/bin/sh
-
-" GUI options
-set guioptions=aAce                         
-
-" Enable filetype detection
-filetype on                                 
-
-" Enable filetype-specific indenting
-filetype indent on                          
-
-" Enable filetype-specific plugins
-filetype plugin on                          
-
-" Syntax highlighting
-syntax on									                  
-
-" Set cursor position
-au WinLeave * set nocursorcolumn
-au WinEnter * set cursorcolumn
-" jump to the last known cursor position
-autocmd BufReadPost *
-      \ if line("'\"") > 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-
-" Show the statusline
-set laststatus=2                            
-
-" Numero riga
-set nu                                      
-
-" treat all numbers as decimals (1 - 10)
-set nrformats-=octal
-
-" allow hidden buffer
-set hidden                                
-
-" Row after cursor
-set so=10                                   
-
-" Open vertical splits to the right
-set splitright                              
-
-" Open horizontal splits to the bottom
-set splitbelow                              
-
-" Start search from the beginning
-set wrapscan                                
-
-" set the character encoding
-set encoding=utf-8
-
-" set fileformat
-set fileformat=unix
-
-" No backups, swap or viminfo
-set nobackup
-set nowritebackup
-set noswapfile 
-if !empty(&viminfo)
-  set viminfo^=!
-endif
-
-" no automatically save on buffer switch
-set noautowrite
-
-" Mouse enabled
-set mouse=a                                 
-
-" normal backspace key functionality
-set backspace=indent,eol,start whichwrap+=<,>,[,]
-
-"" use a different bground color after
-" set textwidth=80
-
-"" Highlight column 81
-set colorcolumn=+1
-"" Highlight from column 81
-" execute "set colorcolumn=" . join(range(81,335), ',')
-
-" highlight the column the cursor is on
-" set cursorcolumn
-
-" highlight the line the cursor is on
-" set cursorline
-
-" no undo files
-set noundofile
-
-" tab and indent options 
-" N space for tab
-set tabstop=2                               
-" N space for autoindent
-set shiftwidth=2                            
+filetype on                               " Enable filetype detection
+filetype indent on                        " Enable filetype-specific indenting
+filetype plugin on                        " Enable filetype-specific plugins
+syntax on									                " Syntax highlighting
+set shell=/bin/sh                         " Shell
+set guioptions=aAce                       " GUI options
+set laststatus=2                          " Show the statusline
+set number                                " Numero riga
+set nrformats-=octal                      " treat all numbers as decimals
+set hidden                                " allow hidden buffer
+set so=10                                 " Row after cursor
+set splitright                            " Open vertical splits to the right
+set splitbelow                            " Open horizontal splits to the bottom
+set wrapscan                              " Start search from the beginning
+set encoding=utf-8                        " set the character encoding
+set fileformat=unix                       " set fileformat
+set nobackup                              " No backups
+set nowritebackup                         " No backups
+set noswapfile                            " No swap 
+set tabstop=2                             " N space for tab
+set shiftwidth=2                          " N space for autoindent
+set noautowrite                           " no auto save on buffer switch
+set mouse=a                               " Mouse enabled
+set colorcolumn=+1                        " Highlight column 81
+set noundofile                            " no undo files
+set foldmethod=indent
+set foldlevel=1
+set foldnestmax=10
+set nofoldenable                          " Open all folds by default
+set showcmd                               " Show command 
+set showmatch                             " Show close bracket
+set incsearch                             " turn on incremental search
+set ignorecase                            " no case sensitive search patterns
+set hlsearch                              " Highlight search results 
+set smartcase                             " Search with caps - override ignorecase
+set esckeys                               " cursor keys in I mode
+set autoindent                            " Copy indent after <CR>  o O
+set undolevels=1000 						          " n of changes that can be undone
+set history=1000  							          " history
+set showmode								              " Display current mode
+set noerrorbells                          " do not use errorbells
+set nojoinspaces                          " two spaces after a period on join
+set title                                 " show window title
+set spelllang=it                          " set default spell to it
 set softtabstop=2
-" Use space for a <Tab>.
 set expandtab                               
 set smarttab                                
 set complete-=i
@@ -154,62 +95,35 @@ set ttimeoutlen=100
 set ruler
 set wildmenu
 set autoread
+set backspace=indent,eol,start whichwrap+=<,>,[,] " normal backspace
 
+" jump to the last known cursor position
+autocmd BufReadPost *
+      \ if line("'\"") > 1 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
+
+" No viminfo
+if !empty(&viminfo)
+  set viminfo^=!
+endif
+
+" tags on path_extra
 if has('path_extra')
   setglobal tags-=./tags tags-=./tags; tags^=./tags;
 endif
 
-" folding options
-set foldmethod=indent
-set foldlevel=1
-set foldnestmax=10
-" Open all folds by default
-set nofoldenable
+" Set cursor position
+au WinLeave * set nocursorcolumn
+au WinEnter * set cursorcolumn
 
-" Show command 
-set showcmd                                 
-
-" Show close bracket
-set showmatch                               
-
-" turn on incremental search
-set incsearch                               
-
-" no case sensitive search patterns
-set ignorecase                              
-
-" Highlight search results 
-set hlsearch                                
-
-" Search with caps - override ignorecase
-set smartcase                               
-
-" allow usage of cursor keys when in insert mode
-set esckeys
-
-" Copy indent when new row is started with <CR>  o O
-set autoindent                              
-
-"maximum number of changes that can be undone
-set undolevels=1000 						            
-
-" Store a ton of history (default is 20)
-set history=1000  							            
-
-" Display current mode
-set showmode								                
-
-" do not use errorbells
-set noerrorbells
-
-" insert two spaces after a period when joining two lines
-set nojoinspaces
-
-" show window title
-set title
-
-" set default spell to it
-set spelllang=it
+" =============================================================================
+" COMMENTED SETTINGS
+" =============================================================================
+" set textwidth=80 " use a different bground color after
+" execute "set colorcolumn=" . join(range(81,335), ',') " Highlight from column 81
+" set cursorcolumn " highlight the column the cursor is on
+" set cursorline " highlight the line the cursor is on
 
 " =============================================================================
 " WINDOWS BEHAVIOR
@@ -285,6 +199,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'netrw']
 " VIM-AIRLINE
 " =============================================================================
 let g:airline_powerline_fonts = 1
+let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
 let g:airline_theme = 'base16'
@@ -502,6 +417,11 @@ let g:devdocs_filetype_map = {
     \ }
 
 " =============================================================================
+" MatchTagAlways
+" =============================================================================
+let g:mta_use_matchparen_group = 1
+
+" =============================================================================
 "<F1> open help
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
@@ -515,12 +435,14 @@ nmap <Leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :Buffers<CR>
+nmap <Leader>nm :Dispatch npm start<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>a :Ag 
 nmap <Leader>l :Lines 
 nmap <Leader>g :GFiles?<CR> 
 nmap <Leader>gg :Gstatus<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
+nmap <Leader>% :MtaJumpToOtherTag<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 nmap K <Plug>(devdocs-under-cursor)
 
