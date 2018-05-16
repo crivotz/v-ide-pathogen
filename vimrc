@@ -1,4 +1,9 @@
 " =============================================================================
+" NO COMPATIBILITY
+" =============================================================================
+set nocompatible
+
+" =============================================================================
 " PATHOGEN
 " =============================================================================
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -445,6 +450,7 @@ nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <Leader>% :MtaJumpToOtherTag<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 nmap K <Plug>(devdocs-under-cursor)
+nmap <Leader>pr <Plug>(Prettier)
 
 " =============================================================================
 " DISABLED KEYS

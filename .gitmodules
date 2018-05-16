@@ -238,3 +238,11 @@
 	path = vim/bundle/MatchTagAlways
 	url = https://@github.com/Valloric/MatchTagAlways.git
 	ignore = untracked
+[submodule "vim/bundle/NrrwRgn"]
+	path = vim/bundle/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
+	ignore = untracked
+[submodule "vim/bundle/vim-prettier"]
+	path = vim/bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier.git
+	ignore = untracked
