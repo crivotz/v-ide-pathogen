@@ -158,10 +158,6 @@
 	path = vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
 	ignore = untracked
-[submodule "vim/bundle/far"]
-	path = vim/bundle/far
-	url = https://github.com/brooth/far.vim.git
-	ignore = untracked
 [submodule "vim/bundle/vim-rooter"]
 	path = vim/bundle/vim-rooter
 	url = https://github.com/airblade/vim-rooter
@@ -197,10 +193,6 @@
 [submodule "vim/bundle/rainbow_parentheses"]
 	path = vim/bundle/rainbow_parentheses
 	url = https://github.com/junegunn/rainbow_parentheses.vim.git
-	ignore = untracked
-[submodule "vim/bundle/vim-interestingwords"]
-	path = vim/bundle/vim-interestingwords
-	url = https://github.com/lfv89/vim-interestingwords.git
 	ignore = untracked
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch

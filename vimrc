@@ -51,7 +51,7 @@ filetype on                               " Enable filetype detection
 filetype indent on                        " Enable filetype-specific indenting
 filetype plugin on                        " Enable filetype-specific plugins
 syntax on									                " Syntax highlighting
-set shell=/bin/sh                         " Shell
+set shell=/bin/zsh                        " Shell
 set guioptions=aAce                       " GUI options
 set laststatus=2                          " Show the statusline
 set number                                " Numero riga
@@ -153,7 +153,7 @@ cmap <S-Insert>		<C-R>+
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 end
-let g:ack_use_dispatch = 1
+" let g:ack_use_dispatch = 1
 
 " =============================================================================
 " FZF
@@ -406,14 +406,6 @@ noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 " =============================================================================
-" VIM-INTERESTINGWORDS
-" =============================================================================
-nnoremap <silent> <leader>k :call InterestingWords('n')<cr>
-nnoremap <silent> <leader>K :call UncolorAllWords()<cr>
-nnoremap <silent> n nzz<Plug>SearchIndex:call WordNavigation('forward')<cr>
-nnoremap <silent> N Nzz<Plug>SearchIndex:call WordNavigation('backward')<cr>
-
-" =============================================================================
 " DEVDOCS
 " =============================================================================
 let g:devdocs_filetype_map = {
@@ -450,7 +442,7 @@ nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <Leader>% :MtaJumpToOtherTag<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 nmap K <Plug>(devdocs-under-cursor)
-nmap <Leader>pr <Plug>(Prettier)
+nmap <Leader><< <Plug>(Prettier)
 
 " =============================================================================
 " DISABLED KEYS

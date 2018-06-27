@@ -53,7 +53,6 @@ Thanks to the developers of these plugins/color schemes
 * [startuptime](https://github.com/tweekmonster/startuptime.vim): Breakdown Vim's --startuptime output
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out
 * [vim-searchindex](https://github.com/google/vim-searchindex): display number of search matches & index of a current match
-* [vim-interestingwords](https://github.com/lfv89/vim-interestingwords): vim-interestingwords allows you to highlight and navigate through (multiple) different words in a buffer.
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.
 * [ranger.vim](https://github.com/francoiscabrol/ranger.vim): Ranger integration.
 * [Ale](https://github.com/w0rp/ale): Asynchronous Lint Engine
