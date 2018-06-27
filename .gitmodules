@@ -46,30 +46,6 @@
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	ignore = untracked
-[submodule "vim/bundle/molokai"]
-	path = vim/bundle/molokai
-	url = https://github.com/tomasr/molokai.git
-	ignore = untracked
-[submodule "vim/bundle/leap"]
-	path = vim/bundle/leap
-	url = https://github.com/yoos/leap.vim.git
-	ignore = untracked
-[submodule "vim/bundle/vim-railscasts-theme"]
-	path = vim/bundle/vim-railscasts-theme
-	url = https://github.com/jpo/vim-railscasts-theme.git
-	ignore = untracked
-[submodule "vim/bundle/rubyblue"]
-	path = vim/bundle/rubyblue
-	url = https://github.com/jlong/rubyblue.git
-	ignore = untracked
-[submodule "vim/bundle/Wombat"]
-	path = vim/bundle/Wombat
-	url = https://github.com/vim-scripts/Wombat.git
-	ignore = untracked
-[submodule "vim/bundle/Zenburn"]
-	path = vim/bundle/Zenburn
-	url = https://github.com/jnurmine/Zenburn.git
-	ignore = untracked
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
@@ -90,10 +66,6 @@
 	path = vim/bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
 	ignore = dirty
-[submodule "vim/bundle/solarized"]
-	path = vim/bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-  ignore = untracked
 [submodule "vim/bundle/vim-capslock"]
 	path = vim/bundle/vim-capslock
 	url = https://github.com/tpope/vim-capslock.git
@@ -114,21 +86,9 @@
 	path = vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
   ignore = untracked
-[submodule "vim/bundle/vim-hybrid"]
-	path = vim/bundle/vim-hybrid
-	url = https://github.com/w0ng/vim-hybrid.git
-  ignore = untracked
-[submodule "vim/bundle/badwolf"]
-	path = vim/bundle/badwolf
-	url = https://github.com/sjl/badwolf.git
-  ignore = untracked
 [submodule "vim/bundle/vim-endwise"]
 	path = vim/bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
-  ignore = untracked
-[submodule "vim/bundle/vim-tomorrow-theme"]
-	path = vim/bundle/vim-tomorrow-theme
-	url = https://github.com/chriskempson/vim-tomorrow-theme.git
   ignore = untracked
 [submodule "vim/bundle/base16-vim"]
 	path = vim/bundle/base16-vim
@@ -149,10 +109,6 @@
 [submodule "vim/bundle/tmuxline"]
 	path = vim/bundle/tmuxline
 	url = https://github.com/edkolev/tmuxline.vim.git
-	ignore = untracked
-[submodule "vim/bundle/ack"]
-	path = vim/bundle/ack
-	url = https://github.com/mileszs/ack.vim.git
 	ignore = untracked
 [submodule "vim/bundle/indentLine"]
 	path = vim/bundle/indentLine
@@ -237,4 +193,12 @@
 [submodule "vim/bundle/vim-prettier"]
 	path = vim/bundle/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+	ignore = untracked
+[submodule "vim/bundle/vim-multiple-cursors"]
+	path = vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+	ignore = untracked
+[submodule "vim/bundle/ctrlsf.vim"]
+	path = vim/bundle/ctrlsf.vim
+	url = https://github.com/dyng/ctrlsf.vim.git
 	ignore = untracked

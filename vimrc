@@ -148,14 +148,6 @@ cmap <C-V>		<C-R>+
 cmap <S-Insert>		<C-R>+
 
 " =============================================================================
-" ACK
-" =============================================================================
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-end
-" let g:ack_use_dispatch = 1
-
-" =============================================================================
 " FZF
 " =============================================================================
 " let g:fzf_commits_log_options = 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
@@ -419,6 +411,10 @@ let g:devdocs_filetype_map = {
 let g:mta_use_matchparen_group = 1
 
 " =============================================================================
+" Ctrlsf
+" =============================================================================
+
+" =============================================================================
 "<F1> open help
 nmap <F2> :Calendar<CR>
 nnoremap <F3> :NumbersToggle<CR>
@@ -443,6 +439,10 @@ nmap <Leader>% :MtaJumpToOtherTag<CR>
 nmap <silent> <Leader>sp :set spell!<CR>
 nmap K <Plug>(devdocs-under-cursor)
 nmap <Leader><< <Plug>(Prettier)
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordExec
+nnoremap <C-F>t :CtrlSFToggle<CR>
 
 " =============================================================================
 " DISABLED KEYS
