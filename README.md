@@ -13,7 +13,6 @@ Thanks to the developers of these plugins/color schemes
 **ACTIVE PLUGINS**
 
 * [vim-pathogen](https://github.com/tpope/vim-pathogen): One ring to rule them all
-* [ack](https://github.com/mileszs/ack.vim.git): Vim plugin for the Perl module / CLI script 'ack'
 * [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
@@ -63,20 +62,12 @@ Thanks to the developers of these plugins/color schemes
 * [vim-dadbod](https://github.com/tpope/vim-dadbod): Modern database interface for Vim
 * [vim-prettier](https://github.com/prettier/vim-prettier): A Vim plugin for Prettier
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn): A Narrow Region Plugin for Vim
+* [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
 
 **COLOR SCHEMES**
 
-* [Molokai](https://github.com/tomasr/molokai)
-* [Vim-hybrid](https://github.com/w0ng/vim-hybrid)
-* [Badwolf](https://github.com/sjl/badwolf)
-* [Leap](https://github.com/yoos/leap.vim)
-* [Railscasts](https://github.com/jpo/vim-railscasts-theme)
-* [Rubyblue](https://github.com/jlong/rubyblue)
-* [Wombat](https://github.com/vim-scripts/Wombat)
-* [Zenburn](https://github.com/jnurmine/Zenburn)
-* [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Base16](https://github.com/chriskempson/base16-vim)
-* [Tomorrow](https://github.com/chriskempson/tomorrow-theme)
 
 **SYNTAX**
 
