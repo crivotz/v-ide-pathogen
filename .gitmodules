@@ -202,3 +202,7 @@
 	path = vim/bundle/ctrlsf.vim
 	url = https://github.com/dyng/ctrlsf.vim.git
 	ignore = untracked
+[submodule "vim/bundle/vim-mucomplete"]
+	path = vim/bundle/vim-mucomplete
+	url = https://github.com/lifepillar/vim-mucomplete.git
+	ignore = untracked
