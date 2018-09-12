@@ -31,13 +31,12 @@ if has('unix')
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     " Do Mac stuff here
-    set guifont=Hack\:h11
+    set guifont=Knack\ Nerd\ Font\:h11
     set rtp+=/usr/local/opt/fzf
   else
     set guifont=Knack\ Nerd\ Font\ 8
     set rtp+=~/.fzf
   endif
-elseif has('mac')
 elseif has('win32') || has('win64')
   behave mswin
   set guifont=Hack\:9
