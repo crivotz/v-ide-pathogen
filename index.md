@@ -19,8 +19,6 @@ Thanks to the developers of these plugins/color schemes
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
 * [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.
-* [Neocomplete](https://github.com/Shougo/neocomplete.vim): Auto-completion system
-* [Neosnippet](https://github.com/Shougo/neosnippet.vim): The Neosnippet plug-In adds snippet support to Vim. Snippets are small templates for commonly used code that you can fill in on the fly
 * [Rails](https://github.com/tpope/vim-rails): Ruby on Rails power tools
 * [Fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
@@ -64,6 +62,7 @@ Thanks to the developers of these plugins/color schemes
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn): A Narrow Region Plugin for Vim
 * [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
+* [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete): Chained completion that works the way you want! 
 
 **COLOR SCHEMES**
 
@@ -113,4 +112,4 @@ git submodule update --remote --merge
 **SUGGESTION**
 
 * Font: [Knack Nerd fonts](https://github.com/ryanoasis/nerd-fonts) or DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)
-* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster
+* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
