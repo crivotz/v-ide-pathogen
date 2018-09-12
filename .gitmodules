@@ -10,10 +10,6 @@
 	path = vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 	ignore = untracked
-[submodule "vim/bundle/neosnippet"]
-	path = vim/bundle/neosnippet
-	url = https://github.com/Shougo/neosnippet.vim.git
-	ignore = untracked
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -61,11 +57,7 @@
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
-	ignore = dirty
-[submodule "vim/bundle/neocomplete"]
-	path = vim/bundle/neocomplete
-	url = https://github.com/Shougo/neocomplete.vim.git
-	ignore = dirty
+	ignore = untracked
 [submodule "vim/bundle/vim-capslock"]
 	path = vim/bundle/vim-capslock
 	url = https://github.com/tpope/vim-capslock.git

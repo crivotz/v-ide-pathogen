@@ -9,8 +9,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'neocomplete')
-call add(g:pathogen_disabled, 'neosnippet')
+" call add(g:pathogen_disabled, 'neocomplete')
 " Infect
 execute pathogen#infect()
 
