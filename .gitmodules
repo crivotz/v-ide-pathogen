@@ -198,3 +198,7 @@
 	path = vim/bundle/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
 	ignore = untracked
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	ignore = untracked

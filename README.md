@@ -63,6 +63,7 @@ Thanks to the developers of these plugins/color schemes
 * [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
 * [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete): Chained completion that works the way you want! 
+* [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly improved Javascript indentation and syntax support in Vim  
 
 **COLOR SCHEMES**
 
