@@ -9,7 +9,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'neocomplete')
+" call add(g:pathogen_disabled, 'vim-javascript')
 " Infect
 execute pathogen#infect()
 
@@ -71,6 +71,7 @@ set noautowrite                           " no auto save on buffer switch
 set mouse=a                               " Mouse enabled
 set colorcolumn=+1                        " Highlight column 81
 set noundofile                            " no undo files
+set backupcopy=yes
 set foldmethod=indent
 set foldlevel=1
 set foldnestmax=10
