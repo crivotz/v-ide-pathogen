@@ -152,25 +152,33 @@ cmap <S-Insert>		<C-R>+
 " =============================================================================
 " let g:fzf_commits_log_options = 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+      \ { 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Comment'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Statement'],
+      \ 'info':    ['fg', 'PreProc'],
+      \ 'border':  ['fg', 'Ignore'],
+      \ 'prompt':  ['fg', 'Conditional'],
+      \ 'pointer': ['fg', 'Exception'],
+      \ 'marker':  ['fg', 'Keyword'],
+      \ 'spinner': ['fg', 'Label'],
+      \ 'header':  ['fg', 'Comment'] }
 
 " =============================================================================
 " RANGER
 " =============================================================================
 let g:ranger_map_keys = 0
 let g:ranger_replace_netrw = 1
+
+" =============================================================================
+" ULTISNIPS
+" =============================================================================
+let g:UltiSnipsExpandTrigger = "<f6>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " =============================================================================
 " NETRW
@@ -210,11 +218,11 @@ let g:airline_left_sep = ''
 " TMUXLINE
 " =============================================================================
 let g:tmuxline_separators = {
-    \ 'left' : '',
-    \ 'left_alt': '',
-    \ 'right' : '',
-    \ 'right_alt' : '',
-    \ 'space' : ' '}
+      \ 'left' : '',
+      \ 'left_alt': '',
+      \ 'right' : '',
+      \ 'right_alt' : '',
+      \ 'space' : ' '}
 let g:airline#extensions#tmuxline#enabled = 0
 " let g:tmuxline_powerline_separators = 0
 
@@ -232,6 +240,10 @@ let g:airline#extensions#tmuxline#enabled = 0
 " =============================================================================
 set completeopt+=menuone,noselect
 let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#chains = {}
+let g:mucomplete#chains.default = ['ulti', 'omni', 'path', 'keyn', 'keyp', 'file']
+" inoremap <silent> <expr> <cr> mucomplete#ultisnips#expand_snippet("\<cr>")
+let g:jedi#popup_on_dot = 1
 
 " =============================================================================
 " FILETYPE
@@ -315,9 +327,9 @@ noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 " DEVDOCS
 " =============================================================================
 let g:devdocs_filetype_map = {
-    \   'ruby': 'rails',
-    \   'javascript.js': 'jquery',
-    \ }
+      \   'ruby': 'rails',
+      \   'javascript.js': 'jquery',
+      \ }
 
 " =============================================================================
 " MatchTagAlways
