@@ -68,6 +68,7 @@ Thanks to the developers of these plugins/color schemes
 * [Jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM  
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
+* [Vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim.  
 
 **COLOR SCHEMES**
 

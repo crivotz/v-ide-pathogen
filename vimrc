@@ -9,7 +9,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'vim-javascript')
+" call add(g:pathogen_disabled, 'ultisnips')
 " Infect
 execute pathogen#infect()
 
@@ -94,7 +94,6 @@ set spelllang=it                          " set default spell to it
 set softtabstop=2
 set expandtab                               
 set smarttab                                
-set complete-=i
 set ttimeout
 set ttimeoutlen=100
 set ruler
@@ -173,14 +172,6 @@ let g:ranger_map_keys = 0
 let g:ranger_replace_netrw = 1
 
 " =============================================================================
-" ULTISNIPS
-" =============================================================================
-let g:UltiSnipsExpandTrigger = "<f6>"
-let g:UltiSnipsJumpForwardTrigger = "<c-b>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-
-" =============================================================================
 " NETRW
 " =============================================================================
 " let g:netrw_banner = 0
@@ -235,15 +226,22 @@ let g:airline#extensions#tmuxline#enabled = 0
 " let g:ale_set_quickfix = 1
 
 " =============================================================================
+" NEOSNIPPET
+" =============================================================================
+let g:UltiSnipsExpandTrigger = "<f6>"        " Do not use <tab>
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"  " Do not use <c-j>
+
+" =============================================================================
 " VIM-MUCOMPLETE
 " =============================================================================
-" =============================================================================
-set completeopt+=menuone,noselect
+set completeopt+=menuone,preview,noselect
+set shortmess+=c
+set belloff+=ctrlg
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#chains = {}
 let g:mucomplete#chains.default = ['ulti', 'omni', 'path', 'keyn', 'keyp', 'file']
-" inoremap <silent> <expr> <cr> mucomplete#ultisnips#expand_snippet("\<cr>")
 let g:jedi#popup_on_dot = 1
+inoremap <silent> <expr> <cr> mucomplete#ultisnips#expand_snippet("\<cr>")
 
 " =============================================================================
 " FILETYPE
