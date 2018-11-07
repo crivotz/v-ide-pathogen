@@ -83,6 +83,9 @@ Thanks to the developers of these plugins/color schemes
 * PHP
 * HTML
 * Ruby
+* Python
+* Go
+* Node
 * SCSS
 * JSON
 
