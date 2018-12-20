@@ -241,7 +241,8 @@ let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#chains = {}
 let g:mucomplete#chains.default = ['ulti', 'omni', 'path', 'keyn', 'keyp', 'file']
 let g:jedi#popup_on_dot = 1
-inoremap <silent> <expr> <cr> mucomplete#ultisnips#expand_snippet("\<cr>")
+inoremap <silent> <expr> <Plug>MyCr mucomplete#ultisnips#expand_snippet("\<cr>")
+imap <cr> <Plug>MyCr
 
 " =============================================================================
 " FILETYPE
