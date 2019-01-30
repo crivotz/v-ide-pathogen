@@ -222,3 +222,7 @@
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 	ignore = untracked
+[submodule "vim/bundle/dart-vim-plugin"]
+	path = vim/bundle/dart-vim-plugin
+	url = https://github.com/dart-lang/dart-vim-plugin.git
+	ignore = untracked

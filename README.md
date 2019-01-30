@@ -69,6 +69,7 @@ Thanks to the developers of these plugins/color schemes
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
 * [Vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim.  
+* [dart-vim-plugin](https://github.com/dart-lang/dart-vim-plugin): Syntax highlighting for Dart in Vim.  
 
 **COLOR SCHEMES**
 
