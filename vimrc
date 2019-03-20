@@ -294,13 +294,10 @@ let g:rainbow#pairs =[['(',')'], ['[',']'], ['{','}']]
 " =============================================================================
 " INDENTLINE
 " =============================================================================
-let g:indentLine_setColors = 0
-
-" =============================================================================
-" VIM-TAGS
-" =============================================================================
-let g:vim_tags_auto_generate = 1
-let g:vim_tags_use_vim_dispatch = 0
+" let g:indentLine_setColors = 0
+let g:indentLine_char = '·'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
 
 " =============================================================================
 " VIM-RUBOCOP
@@ -357,8 +354,8 @@ nmap <Leader>nm :Dispatch npm start<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>a :Ag 
 nmap <Leader>l :Lines 
-nmap <Leader>g :GFiles?<CR> 
-nmap <Leader>gg :Gstatus<CR> 
+nmap <Leader>g :G<CR> 
+nmap <Leader>gg :GFiles?<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <Leader>% :MtaJumpToOtherTag<CR>
 nmap <silent> <Leader>sp :set spell!<CR>

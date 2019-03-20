@@ -62,10 +62,6 @@
 	path = vim/bundle/vim-capslock
 	url = https://github.com/tpope/vim-capslock.git
   ignore = untracked
-[submodule "vim/bundle/vim-tags"]
-	path = vim/bundle/vim-tags
-	url = https://github.com/szw/vim-tags.git
-  ignore = untracked
 [submodule "vim/bundle/vim-css-color"]
 	path = vim/bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color.git
