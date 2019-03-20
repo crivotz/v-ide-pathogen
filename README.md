@@ -41,7 +41,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
-* [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): A vim plugin that manages your tag files  
 * [rainbow parentheses](https://github.com/junegunn/rainbow_parentheses.vim): Simple Rainbow Parentheses
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks
