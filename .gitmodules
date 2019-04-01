@@ -205,7 +205,7 @@
 [submodule "vim/bundle/jedi-vim"]
 	path = vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-	ignore = untracked
+	ignore = dirty
 [submodule "vim/bundle/vim-eunuch"]
 	path = vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
