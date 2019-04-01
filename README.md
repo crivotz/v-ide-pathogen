@@ -36,7 +36,6 @@ Thanks to the developers of these plugins/color schemes
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')
-* [Vim-css-color](https://github.com/ap/vim-css-color.git): color hex codes and color names
 * [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
