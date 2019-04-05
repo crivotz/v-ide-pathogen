@@ -282,10 +282,6 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 let g:vim_json_syntax_conceal = 0
 
 " =============================================================================
-" RAINBOW
-" =============================================================================
-
-" =============================================================================
 " INDENTLINE
 " =============================================================================
 " let g:indentLine_setColors = 0
@@ -345,7 +341,6 @@ map <F4> :set list! list? <CR>
 nnoremap <F5> :GundoToggle<CR>
 nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
-nmap <F9> <CR>
 autocmd FileType ruby nmap <F10> :call RunWith("ruby")<cr>
 nmap <Leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
