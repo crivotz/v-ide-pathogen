@@ -42,10 +42,6 @@
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	ignore = untracked
-[submodule "vim/bundle/vim-json"]
-	path = vim/bundle/vim-json
-	url = https://github.com/elzr/vim-json.git
-	ignore = untracked
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
@@ -221,6 +217,8 @@
 [submodule "vim/bundle/vim-jdaddy"]
 	path = vim/bundle/vim-jdaddy
 	url = https://github.com/tpope/vim-jdaddy.git
+	ignore = untracked
 [submodule "vim/bundle/vim-hexokinase"]
 	path = vim/bundle/vim-hexokinase
 	url = https://github.com/RRethy/vim-hexokinase.git
+	ignore = untracked
