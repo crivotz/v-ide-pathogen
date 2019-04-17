@@ -26,6 +26,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.
 * [vim-dadbod](https://github.com/tpope/vim-dadbod): Modern database interface for Vim
 * [Vim-eunuch](https://github.com/tpope/vim-eunuch): Helpers for UNIX.  
+* [vim-jdaddy](https://github.com/tpope/vim-jdaddy): JSON manipulation and pretty printing.  
 * [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
@@ -36,7 +37,6 @@ Thanks to the developers of these plugins/color schemes
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')
-* [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
@@ -68,6 +68,7 @@ Thanks to the developers of these plugins/color schemes
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
 * [Vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim.  
 * [dart-vim-plugin](https://github.com/dart-lang/dart-vim-plugin): Syntax highlighting for Dart in Vim.  
+* [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
 
 **COLOR SCHEMES**
 
