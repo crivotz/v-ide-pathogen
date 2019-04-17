@@ -18,6 +18,12 @@ execute pathogen#infect()
 " =============================================================================
 if filereadable(expand("~/.vimrc_background"))
   set t_Co=256
+  if has("termguicolors")
+    set termguicolors
+    " set Vim-specific sequences for RGB colors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  endif
   let base16colorspace=256
   source ~/.vimrc_background
 else
@@ -31,10 +37,10 @@ if has('unix')
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     " Do Mac stuff here
-    set guifont=Knack\ Nerd\ Font\:h11
+    set guifont=Fura\ Code\ Nerd\ Font\:h11
     set rtp+=/usr/local/opt/fzf
   else
-    set guifont=Knack\ Nerd\ Font\ 8
+    set guifont=Fura\ Code\ Nerd\ Font\ 8
     set rtp+=~/.fzf
   endif
 elseif has('win32') || has('win64')
@@ -201,6 +207,13 @@ let g:airline_left_alt_sep= ''
 let g:airline_left_sep = ''
 
 " =============================================================================
+" VIM-HEXOKINASE
+" =============================================================================
+let g:Hexokinase_ftAutoload = ['*']
+let g:Hexokinase_highlighters = ['background']
+let g:Hexokinase_refreshEvents = ['BufWritePost']
+
+" =============================================================================
 " TMUXLINE
 " =============================================================================
 let g:tmuxline_separators = {
@@ -285,9 +298,11 @@ let g:vim_json_syntax_conceal = 0
 " INDENTLINE
 " =============================================================================
 " let g:indentLine_setColors = 0
-let g:indentLine_char = '·'
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_char = '|'
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" let g:indentLine_char = '·'
+" let g:indentLine_leadingSpaceEnabled = 1
+" let g:indentLine_leadingSpaceChar = '·'
 
 " =============================================================================
 " VIM-RUBOCOP
@@ -342,6 +357,7 @@ nnoremap <F5> :GundoToggle<CR>
 nmap <F7> :Ranger<CR>
 nmap <F8> :TagbarToggle<CR>
 autocmd FileType ruby nmap <F10> :call RunWith("ruby")<cr>
+autocmd FileType json nmap <F10> :%!python -m json.tool<cr>
 nmap <Leader>bda :bd <C-a> <CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
