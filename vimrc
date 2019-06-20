@@ -167,6 +167,11 @@ let g:fzf_colors =
       \ 'header':  ['fg', 'Comment'] }
 
 " =============================================================================
+" iNOTATIONAL VIM
+" =============================================================================
+let g:nv_search_paths = ['~/Note']
+
+" =============================================================================
 " RANGER
 " =============================================================================
 let g:ranger_map_keys = 0
@@ -358,8 +363,9 @@ nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bb :Buffers<CR>
 nmap <Leader>nm :Dispatch npm start<CR>
+nmap <Leader>nv :NV<CR>
 nmap <Leader>p :FZF<CR>
-nmap <Leader>a :Ag 
+nmap <Leader>r :Rg 
 nmap <Leader>l :Lines 
 nmap <Leader>g :G<CR> 
 nmap <Leader>gg :GFiles?<CR> 

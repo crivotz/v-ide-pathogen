@@ -122,3 +122,4 @@ git submodule update --remote --merge
 
 * Font: [Knack Nerd fonts](https://github.com/ryanoasis/nerd-fonts) or DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)
 * [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster
+* [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern  

@@ -222,3 +222,7 @@
 	path = vim/bundle/vim-hexokinase
 	url = https://github.com/RRethy/vim-hexokinase.git
 	ignore = untracked
+[submodule "vim/bundle/notational-fzf-vim"]
+	path = vim/bundle/notational-fzf-vim
+	url = https://github.com/alok/notational-fzf-vim
+	ignore = untracked
