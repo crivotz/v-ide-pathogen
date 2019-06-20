@@ -365,7 +365,7 @@ nmap <Leader>bb :Buffers<CR>
 nmap <Leader>nm :Dispatch npm start<CR>
 nmap <Leader>nv :NV<CR>
 nmap <Leader>p :FZF<CR>
-nmap <Leader>r :Rg 
+nmap <Leader>r :Rg<CR>
 nmap <Leader>l :Lines 
 nmap <Leader>g :G<CR> 
 nmap <Leader>gg :GFiles?<CR> 
