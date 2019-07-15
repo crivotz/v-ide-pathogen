@@ -32,7 +32,7 @@ Thanks to the developers of these plugins/color schemes
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
-* [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.
+* [vim-signify](https://github.com/mhinz/vim-signify): Show a diff using Vim its sign column  .
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
