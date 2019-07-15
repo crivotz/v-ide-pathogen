@@ -65,6 +65,7 @@ Thanks to the developers of these plugins/color schemes
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
 * [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot): A solid language pack for Vim.  
 
 **COLOR SCHEMES**
 
