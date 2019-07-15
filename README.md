@@ -66,6 +66,7 @@ Thanks to the developers of these plugins/color schemes
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
 * [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): A solid language pack for Vim.  
+* [vim-node](https://github.com/moll/vim-node): Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node  
 
 **COLOR SCHEMES**
 
