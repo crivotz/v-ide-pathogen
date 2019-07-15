@@ -42,10 +42,6 @@
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	ignore = untracked
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
-	ignore = untracked
 [submodule "vim/bundle/vim-easymotion"]
 	path = vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
@@ -182,9 +178,6 @@
 	path = vim/bundle/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
 	ignore = untracked
-[submodule "vim/bundle/vim-javascript"]
-	path = vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 	ignore = untracked
 [submodule "vim/bundle/vim-snippets"]
 	path = vim/bundle/vim-snippets
@@ -198,17 +191,9 @@
 	path = vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
 	ignore = untracked
-[submodule "vim/bundle/vim-go"]
-	path = vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
-	ignore = untracked
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-	ignore = untracked
-[submodule "vim/bundle/dart-vim-plugin"]
-	path = vim/bundle/dart-vim-plugin
-	url = https://github.com/dart-lang/dart-vim-plugin.git
 	ignore = untracked
 [submodule "vim/bundle/vim-gutentags"]
 	path = vim/bundle/vim-gutentags

@@ -37,7 +37,6 @@ Thanks to the developers of these plugins/color schemes
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')
-* [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): A vim plugin that manages your tag files  
@@ -62,12 +61,9 @@ Thanks to the developers of these plugins/color schemes
 * [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
 * [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete): Chained completion that works the way you want! 
-* [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly improved Javascript indentation and syntax support in Vim  
 * [Jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM  
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
-* [Vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim.  
-* [dart-vim-plugin](https://github.com/dart-lang/dart-vim-plugin): Syntax highlighting for Dart in Vim.  
 * [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
 
 **COLOR SCHEMES**
