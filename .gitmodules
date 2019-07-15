@@ -6,10 +6,6 @@
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
 	ignore = untracked
-[submodule "vim/bundle/vim-gitgutter"]
-	path = vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
-	ignore = untracked
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
