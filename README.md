@@ -67,6 +67,7 @@ Thanks to the developers of these plugins/color schemes
 * [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): A solid language pack for Vim.  
 * [vim-node](https://github.com/moll/vim-node): Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node  
+* [vim-hardtime](https://github.com/takac/vim-hardtime): Plugin to help you stop repeating the basic movement keys  
 
 **COLOR SCHEMES**
 
