@@ -219,3 +219,7 @@
 	path = vim/bundle/vim-hardtime
 	url = https://github.com/takac/vim-hardtime.git
 	ignore = untracked
+[submodule "vim/bundle/vim-signify"]
+	path = vim/bundle/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+	ignore = untracked
