@@ -223,3 +223,10 @@
 	path = vim/bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
 	ignore = untracked
+[submodule "vim/bundle/gist-vim"]
+	path = vim/bundle/gist-vim
+	url = https://github.com/mattn/gist-vim.git
+	ignore = untracked
+[submodule "vim/bundle/webapi-vim"]
+	path = vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
