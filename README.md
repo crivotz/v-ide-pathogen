@@ -60,7 +60,7 @@ Thanks to the developers of these plugins/color schemes
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn): A Narrow Region Plugin for Vim
 * [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
-* [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete): Chained completion that works the way you want! 
+* [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe): A code-completion engine for Vim  
 * [Jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM  
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
@@ -94,11 +94,15 @@ Thanks to the developers of these plugins/color schemes
 
 ```console
 git clone git://github.com:crivotz/v-ide.git ~/.v-ide
-cd ~.v-ide
+cd ~/.v-ide
 git submodule update --init --recursive
 ln -s ~/.v-ide/vimrc .vimrc
 ln -s ~/.v-ide/vim .vim
 ln -s ~/.v-ide/vimrc_background .vimrc_background
+
+cd ~/v.ide/vim/bundle/YouComplete/Me
+git submodule update --init --recursive
+./install.py --clang-completer --go-completer --ts-completer
 ```
 
 **UPDATE**
@@ -118,6 +122,9 @@ git submodule update --remote --merge
 * [FZF](https://github.com/junegunn/fzf)
 * [Ranger](http://ranger.nongnu.org)
 * [Prettier](https://prettier.io)
+* [Ruby](https://www.ruby-lang.org)
+* [Python](https://www.python.org)
+* [LUA](https://www.lua.org)
 
 **SUGGESTION**
 

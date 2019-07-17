@@ -170,11 +170,6 @@
 	path = vim/bundle/ctrlsf.vim
 	url = https://github.com/dyng/ctrlsf.vim.git
 	ignore = untracked
-[submodule "vim/bundle/vim-mucomplete"]
-	path = vim/bundle/vim-mucomplete
-	url = https://github.com/lifepillar/vim-mucomplete.git
-	ignore = untracked
-	ignore = untracked
 [submodule "vim/bundle/vim-snippets"]
 	path = vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
@@ -230,3 +225,7 @@
 [submodule "vim/bundle/webapi-vim"]
 	path = vim/bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+	ignore = untracked

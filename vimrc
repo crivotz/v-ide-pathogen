@@ -15,7 +15,7 @@ set langmenu=en_US.UTF-8
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'ultisnips')
+" call add(g:pathogen_disabled, 'vim-mucomplete')
 " Infect
 execute pathogen#infect()
 
@@ -256,23 +256,22 @@ let g:airline#extensions#tmuxline#enabled = 0
 " let g:ale_set_quickfix = 1
 
 " =============================================================================
-" NEOSNIPPET
+" Ultisnips
 " =============================================================================
-let g:UltiSnipsExpandTrigger = "<f6>"        " Do not use <tab>
-let g:UltiSnipsJumpForwardTrigger = "<c-b>"  " Do not use <c-j>
+" let g:UltiSnipsExpandTrigger = "<f6>"        " Do not use <tab>
+" let g:UltiSnipsJumpForwardTrigger = "<c-b>"  " Do not use <c-j>
 
 " =============================================================================
-" VIM-MUCOMPLETE
+" YouCompleteMe
 " =============================================================================
-set completeopt+=menuone,preview,noselect
-set shortmess+=c
-set belloff+=ctrlg
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#chains = {}
-let g:mucomplete#chains.default = ['ulti', 'omni', 'path', 'keyn', 'keyp', 'file']
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+set completeopt=longest,menu
+
+" =============================================================================
+" Jedi-vim
+" =============================================================================
 let g:jedi#popup_on_dot = 1
-inoremap <silent> <expr> <Plug>MyCr mucomplete#ultisnips#expand_snippet("\<cr>")
-imap <cr> <Plug>MyCr
 
 " =============================================================================
 " FILETYPE
@@ -357,6 +356,7 @@ let g:mta_use_matchparen_group = 1
 " =============================================================================
 " Vim-gutentags
 " =============================================================================
+set tags+=tags,.git/tags
 let g:gutentags_enabled = 1
 let g:gutentags_generate_on_missing = 1
 let g:gutentags_generate_on_write = 1
