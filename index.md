@@ -1,4 +1,10 @@
-# V-ide
+    ____      ____                              
+    \   \    /   /       __   _______   _______ 
+     \   \  /   /       |  | |       \ |   ____|
+      \   \/   / ______ |  | |  .--.  ||  |__   
+       \      / |______||  | |  |  |  ||   __|  
+        \    /          |  | |  '--'  ||  |____ 
+         \__/           |__| |_______/ |_______|
 
 Vim custom configuration, oriented for web developers (rails, ruby, php, html, css, SCSS, javascript).  
 I use this repository mainly to keep track of the changes that I made on my Vim configuration.  
@@ -6,7 +12,9 @@ But I hope that it will be useful to other
 
 Thanks to the developers of these plugins/color schemes
 
-![v-ide screenshot](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)
+![v-ide startify](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)
+![v-ide](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot_1.png)
+![v-ide + fugitive + tagbar](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot_2.png)
 
 ---
 
@@ -26,23 +34,20 @@ Thanks to the developers of these plugins/color schemes
 * [vim-dispatch](https://github.com/tpope/vim-dispatch.git): asynchronous build and test dispatcher.
 * [vim-dadbod](https://github.com/tpope/vim-dadbod): Modern database interface for Vim
 * [Vim-eunuch](https://github.com/tpope/vim-eunuch): Helpers for UNIX.  
+* [vim-jdaddy](https://github.com/tpope/vim-jdaddy): JSON manipulation and pretty printing.  
 * [Vim-Airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
 * [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
-* [Gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/reverts hunks.
+* [vim-signify](https://github.com/mhinz/vim-signify): Show a diff using Vim its sign column  .
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
 * [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')
-* [Vim-css-color](https://github.com/ap/vim-css-color.git): color hex codes and color names
-* [vim-json](https://github.com/elzr/vim-json.git): A better JSON for Vim: distinct highlighting of keywords vs values
-* [vim-ruby](https://github.com/vim-ruby/vim-ruby.git): ruby toolbox
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
-* [vim-tags](https://github.com/szw/vim-tags.git): Ctags generator for Vim
-* [rainbow parentheses](https://github.com/junegunn/rainbow_parentheses.vim): Simple Rainbow Parentheses
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): A vim plugin that manages your tag files  
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks
 * [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines
@@ -63,12 +68,19 @@ Thanks to the developers of these plugins/color schemes
 * [NrrwRgn](https://github.com/chrisbra/NrrwRgn): A Narrow Region Plugin for Vim
 * [Ctrlsf](https://github.com/dyng/ctrlsf.vim): An ack.vim alternatives mimics Ctrl-Shift-F on Sublime Text 2  
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim  
-* [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete): Chained completion that works the way you want! 
-* [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly improved Javascript indentation and syntax support in Vim  
+* [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe): A code-completion engine for Vim  
 * [Jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM  
 * [Ultisnips](https://github.com/SirVer/ultinips): UltiSnips - The ultimate snippet solution for Vim.  
 * [Vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets.  
-* [Vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim.  
+* [vim-hexokinase](https://github.com/RRethy/vim-hexokinase): Plugin for displaying the colours in the file.  
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot): A solid language pack for Vim.  
+* [vim-node](https://github.com/moll/vim-node): Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node  
+* [vim-hardtime](https://github.com/takac/vim-hardtime): Plugin to help you stop repeating the basic movement keys  
+* [gist-vim](https://github.com/mattn/gist-vim): vimscript for gist  
+* [webapi-vim](https://github.com/mattn/webapi-vim): vim interface to Web API  
+* [vim-obsession](https://github.com/tpope/vim-obsession): continuosly update session files  
+* [vim-startify](https://github.com/mhinx/vim-startify): The fancy start screen for Vim  
+* [bclose](https://github.com/rbgrouleff/bclose.vim): The fancy start screen for Vim  
 
 **COLOR SCHEMES**
 
@@ -93,11 +105,15 @@ Thanks to the developers of these plugins/color schemes
 
 ```console
 git clone git://github.com:crivotz/v-ide.git ~/.v-ide
-cd ~.v-ide
+cd ~/.v-ide
 git submodule update --init --recursive
 ln -s ~/.v-ide/vimrc .vimrc
 ln -s ~/.v-ide/vim .vim
 ln -s ~/.v-ide/vimrc_background .vimrc_background
+
+cd ~/v.ide/vim/bundle/YouComplete/Me
+git submodule update --init --recursive
+./install.py --clang-completer --go-completer --ts-completer
 ```
 
 **UPDATE**
@@ -117,8 +133,11 @@ git submodule update --remote --merge
 * [FZF](https://github.com/junegunn/fzf)
 * [Ranger](http://ranger.nongnu.org)
 * [Prettier](https://prettier.io)
+* [Ruby](https://www.ruby-lang.org)
+* [Python](https://www.python.org)
+* [LUA](https://www.lua.org)
 
 **SUGGESTION**
 
 * Font: [Knack Nerd fonts](https://github.com/ryanoasis/nerd-fonts) or DejaVu Sans Mono for Powerline or [Hack](http://sourcefoundry.org/hack)
-* [The silver searcher](https://github.com/ggreer/the_silver_searcher.git): A code-searching tool similar to ack, but faster  
+* [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern  
