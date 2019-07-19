@@ -15,7 +15,7 @@ set langmenu=en_US.UTF-8
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'YouCompleteMe')
+" call add(g:pathogen_disabled, 'numbers')
 " Infect
 execute pathogen#infect()
 
@@ -67,7 +67,7 @@ set noshowmode                            " Don't dispay mode in command line
 set shell=/bin/zsh                        " Shell
 set guioptions=aAce                       " GUI options
 set laststatus=2                          " Show the statusline
-set number                                " Numero riga
+set nonumber                              " Row number
 set nrformats-=octal                      " treat all numbers as decimals
 set hidden                                " allow hidden buffer
 set so=10                                 " Row after cursor
@@ -129,6 +129,22 @@ endif
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
 
+" Make background transparent for many things
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+hi! LineNr ctermfg=NONE guibg=NONE
+hi! SignColumn ctermfg=NONE guibg=NONE
+hi! StatusLine guifg=NONE guibg=NONE
+hi! StatusLineNC guifg=NONE guibg=NONE
+" Try to hide vertical spit and end of buffer symbol
+hi! VertSplit gui=NONE guifg=NONE guibg=NONE
+hi! EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+
+" Make background color transparent for git changes
+hi! SignifySignAdd guibg=NONE
+hi! SignifySignDelete guibg=NONE
+hi! SignifySignChange guibg=NONE
+
 " =============================================================================
 " COMMENTED SETTINGS
 " =============================================================================
@@ -178,6 +194,7 @@ let g:fzf_colors =
 " =============================================================================
 let g:startify_files_number = 8
 " let g:startify_session_autoload = 1
+let g:startify_padding_left = 3
 let g:webdevicons_enable_startify = 1
 let g:startify_session_delete_buffers = 1 " delete all buffers when loading or closing a session, ignore unsaved buffers
 let g:startify_session_remove_lines = ['setlocal', 'winheight'] " lines matching any of the patterns in this list, will be removed from the session file
@@ -244,11 +261,6 @@ let g:ranger_replace_netrw = 1
 " =============================================================================
 let g:SignatureMarkTextHLDynamic = 1
 let g:SignatureMarkerTextHLDynamic = 1
-
-" =============================================================================
-" NUMBERS
-" =============================================================================
-let g:numbers_exclude = ['tagbar', 'gundo', 'netrw']
 
 " =============================================================================
 " VIM-AIRLINE
@@ -412,7 +424,7 @@ let g:gutentags_add_default_project_roots = 0
 " =============================================================================
 "<F1> open help
 nmap <F2> :Calendar<CR>
-nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F3> :set invnumber<CR>
 map <F4> :set list! list? <CR>
 nnoremap <F5> :GundoToggle<CR>
 nmap <F7> :Ranger<CR>
