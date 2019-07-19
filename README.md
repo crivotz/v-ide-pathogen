@@ -12,7 +12,9 @@ But I hope that it will be useful to other
 
 Thanks to the developers of these plugins/color schemes
 
-![v-ide screenshot](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)
+![v-ide startify](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot.png)
+![v-ide](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot_1.png)
+![v-ide + fugitive + tagbar](https://raw.githubusercontent.com/crivotz/v-ide/master/v-ide_screenshot_2.png)
 
 ---
 
@@ -78,6 +80,7 @@ Thanks to the developers of these plugins/color schemes
 * [webapi-vim](https://github.com/mattn/webapi-vim): vim interface to Web API  
 * [vim-obsession](https://github.com/tpope/vim-obsession): continuosly update session files  
 * [vim-startify](https://github.com/mhinx/vim-startify): The fancy start screen for Vim  
+* [bclose](https://github.com/rbgrouleff/bclose.vim): The fancy start screen for Vim  
 
 **COLOR SCHEMES**
 
