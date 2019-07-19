@@ -173,10 +173,51 @@ let g:fzf_colors =
       \ 'header':  ['fg', 'Comment'] }
 
 " =============================================================================
+" VIM-STARTIFY
+" =============================================================================
+let g:startify_files_number = 8
+" let g:startify_session_autoload = 1
+let g:webdevicons_enable_startify = 1
+let g:startify_session_delete_buffers = 1 " delete all buffers when loading or closing a session, ignore unsaved buffers
+let g:startify_session_remove_lines = ['setlocal', 'winheight'] " lines matching any of the patterns in this list, will be removed from the session file
+let g:startify_session_sort = 1 " sort sessions by alphabet or modification time
+let g:startify_update_oldfiles = 1
+let g:startify_change_to_dir = 1 " when opening a file or bookmark, change to its directory
+let g:startify_fortune_use_unicode = 1 " beautiful symbols
+" let g:startify_padding_left = 3 " the number of spaces used for left padding
+let g:startify_session_sort = 1 " sort sessions by alphabet or modification time"
+let g:startify_bookmarks = [
+      \ {'d': '~/Dev'},
+      \ {'w': '~/DevWeb'},
+      \ {'c': '~/.vimrc'},
+      \ {'z': '~/.zshrc'}
+      \ ]
+let g:startify_custom_header = [
+      \'____      ____                              ',
+      \'\   \    /   /       __   _______   _______ ',
+      \' \   \  /   /       |  | |       \ |   ____|',
+      \'  \   \/   / ______ |  | |  .--.  ||  |__   ',
+      \'   \      / |______||  | |  |  |  ||   __|  ',
+      \"    \\    \/          |  | |  '--'  ||  |____ ",
+      \'     \__/           |__| |_______/ |_______|',
+      \ ]
+let g:startify_lists = [
+      \ { 'type': 'sessions',  'header': [" \ue62e Sessions"]       },
+      \ { 'type': 'bookmarks', 'header': [" \uf5c2 Bookmarks"]      },
+      \ { 'type': 'files',     'header': [" \ufa1eMRU Files"]            },
+      \ { 'type': 'dir',       'header': [" \ufa1eMRU Files in ". getcwd()] },
+      \ { 'type': 'commands',  'header': [" \uf085 Commands"]       },
+      \ ]
+
+function! StartifyEntryFormat()
+  return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+endfunction
+" =============================================================================
 " CTRLSF
 " =============================================================================
 let g:ctrlsf_ackprg = 'rg'
 let g:ctrlsf_default_view_mode = 'compact'
+
 " =============================================================================
 " NOTATIONAL VIM
 " =============================================================================
@@ -217,6 +258,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y = airline#section#create_right(['ffenc','','%{rvm#statusline()}'])
 let g:airline_theme = 'base16'
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#obsession#enabled = 1
 let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_left_alt_sep= ''
@@ -315,6 +357,7 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 " =============================================================================
 " let g:indentLine_setColors = 0
 let g:indentLine_char = '|'
+let g:indentLine_fileTypeExclude = [ 'startify' ]
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 " let g:indentLine_char = '·'
 " let g:indentLine_leadingSpaceEnabled = 1

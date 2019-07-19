@@ -1,4 +1,10 @@
-# V-ide
+    ____      ____                              
+    \   \    /   /       __   _______   _______ 
+     \   \  /   /       |  | |       \ |   ____|
+      \   \/   / ______ |  | |  .--.  ||  |__   
+       \      / |______||  | |  |  |  ||   __|  
+        \    /          |  | |  '--'  ||  |____ 
+         \__/           |__| |_______/ |_______|
 
 Vim custom configuration, oriented for web developers (rails, ruby, php, html, css, SCSS, javascript).  
 I use this repository mainly to keep track of the changes that I made on my Vim configuration.  
@@ -70,6 +76,8 @@ Thanks to the developers of these plugins/color schemes
 * [vim-hardtime](https://github.com/takac/vim-hardtime): Plugin to help you stop repeating the basic movement keys  
 * [gist-vim](https://github.com/mattn/gist-vim): vimscript for gist  
 * [webapi-vim](https://github.com/mattn/webapi-vim): vim interface to Web API  
+* [vim-obsession](https://github.com/tpope/vim-obsession): continuosly update session files  
+* [vim-startify](https://github.com/mhinx/vim-startify): The fancy start screen for Vim  
 
 **COLOR SCHEMES**
 

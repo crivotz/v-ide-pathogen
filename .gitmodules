@@ -229,3 +229,11 @@
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
 	ignore = untracked
+[submodule "vim/bundle/vim-obsession"]
+	path = vim/bundle/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
+	ignore = untracked
+[submodule "vim/bundle/vim-startify"]
+	path = vim/bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
+	ignore = untracked

@@ -1,1 +1,4 @@
 tags
+Session.vim
+/vim/session/*
+!*.keep
