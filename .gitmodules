@@ -237,3 +237,7 @@
 	path = vim/bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
 	ignore = untracked
+[submodule "vim/bundle/bclose.vim"]
+	path = vim/bundle/bclose.vim
+	url = https://github.com/rbgrouleff/bclose.vim
+	ignore = untracked

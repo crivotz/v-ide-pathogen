@@ -15,7 +15,7 @@ set langmenu=en_US.UTF-8
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Disabled plugin
 let g:pathogen_disabled = []
-" call add(g:pathogen_disabled, 'vim-mucomplete')
+" call add(g:pathogen_disabled, 'YouCompleteMe')
 " Infect
 execute pathogen#infect()
 
@@ -62,6 +62,8 @@ filetype on                               " Enable filetype detection
 filetype indent on                        " Enable filetype-specific indenting
 filetype plugin on                        " Enable filetype-specific plugins
 syntax on									                " Syntax highlighting
+set fillchars+=vert:.                     " Change vertical split character 
+set noshowmode                            " Don't dispay mode in command line
 set shell=/bin/zsh                        " Shell
 set guioptions=aAce                       " GUI options
 set laststatus=2                          " Show the statusline
@@ -98,7 +100,6 @@ set esckeys                               " cursor keys in I mode
 set autoindent                            " Copy indent after <CR>  o O
 set undolevels=1000 						          " n of changes that can be undone
 set history=1000  							          " history
-set showmode								              " Display current mode
 set noerrorbells                          " do not use errorbells
 set nojoinspaces                          " two spaces after a period on join
 set title                                 " show window title
