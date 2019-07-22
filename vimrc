@@ -387,6 +387,8 @@ let g:vimrubocop_confi = '.rubocop.yml'
 " =============================================================================
 let g:rooter_silent_chdir = 1
 let g:rooter_use_lcd = 1
+let g:rooter_resolve_links = 1
+let g:rooter_patterns = ['.git', '.git/']
 
 " =============================================================================
 " VIM-SMOOTH-SCROLL
@@ -408,6 +410,11 @@ let g:devdocs_filetype_map = {
 " MatchTagAlways
 " =============================================================================
 let g:mta_use_matchparen_group = 1
+
+" =============================================================================
+" Vim-polyglot
+" =============================================================================
+let g:polyglot_disabled = ['markdown']
 
 " =============================================================================
 " Vim-gutentags
@@ -440,7 +447,7 @@ nmap <Leader>nv :NV<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>r :Rg<CR>
 nmap <Leader>l :Lines 
-nmap <Leader>g :G<CR> 
+nmap <Leader>g :20G<CR> 
 nmap <Leader>gg :GFiles?<CR> 
 nmap <Leader>xx :VimuxPromptCommand<CR>
 nmap <Leader>% :MtaJumpToOtherTag<CR>

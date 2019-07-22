@@ -43,7 +43,6 @@ Thanks to the developers of these plugins/color schemes
 * [vim-signify](https://github.com/mhinz/vim-signify): Show a diff using Vim its sign column  .
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure
-* [Numbers](https://github.com/myusuf3/numbers.vim): alternates between relative numbering (relativenumber) and absolute numbering (number) for the active window depending on the mode you are in
 * [Searchcomplete](http://www.vim.org/scripts/script.php?script_id=474): Tab completion of words inside of a search ('/')
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion): Vim motions on speed!
 * [gundo](https://github.com/sjl/gundo.vim/): Graph your Vim undo tree in style
@@ -51,7 +50,6 @@ Thanks to the developers of these plugins/color schemes
 * [emmet-vim](https://github.com/mattn/emmet-vim.git): [emmet](http://emmet.io) for vim
 * [vim-signature](https://github.com/kshenoy/vim-signature.git): Plugin to toggle, display and navigate marks
 * [indentLine](https://github.com/yggdroot/indentline): A vim plugin to display the indention levels with thin vertical lines
-* [far](https://github.com/brooth/far.vim): Find and replace vim plugin
 * [vim-rooter](https://github.com/airblade/vim-rooter): Change Vim wd to project root (identified by presence of known directory or file)
 * [vimux](https://github.com/benmills/vimux): vim plugin to interact with tmux
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf loves vim
@@ -88,18 +86,13 @@ Thanks to the developers of these plugins/color schemes
 
 **SYNTAX**
 
-* CSS
-* Eruby
-* Javascript
-* Coffeescript
-* PHP
-* HTML
-* Ruby
-* Python
-* Go
+Check [vim-polyglot](https://github.com/sheerun/vim-polyglot) for full list.  
+Added:  
+* Rails
 * Node
-* SCSS
-* JSON
+
+Excluded via `vimrc`:
+* Markdown  
 
 **INSTALLATION**
 
