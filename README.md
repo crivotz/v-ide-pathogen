@@ -39,7 +39,7 @@ Thanks to the developers of these plugins/color schemes
 * [Vim-Airline-theme](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline
 * [Tmuxline](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 * [Calendar](http://www.vim.org/scripts/script.php?script_id=52): Show a calendar
-* [Delimitmate](https://github.com/Raimondi/delimitMate): Provides insert mode auto-completion for quotes, parens, brackets, etc.
+* [pear-tree](https://github.com/tmsvg/pear-tree): A Vim auto-pair plugin that supports multi-character pairs, intelligent matching, and more  
 * [vim-signify](https://github.com/mhinz/vim-signify): Show a diff using Vim its sign column  .
 * [Scss_syntax](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss
 * [Tagbar](http://majutsushi.github.io/tagbar/): Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file and get an overview of its structure

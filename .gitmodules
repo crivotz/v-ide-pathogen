@@ -2,10 +2,6 @@
 	path = vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 	ignore = untracked
-[submodule "vim/bundle/delimitMate"]
-	path = vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
-	ignore = untracked
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -236,4 +232,8 @@
 [submodule "vim/bundle/bclose.vim"]
 	path = vim/bundle/bclose.vim
 	url = https://github.com/rbgrouleff/bclose.vim
+	ignore = untracked
+[submodule "vim/bundle/pear-tree"]
+	path = vim/bundle/pear-tree
+	url = https://github.com/tmsvg/pear-tree.git
 	ignore = untracked
