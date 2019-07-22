@@ -1,3 +1,4 @@
+Deprecated in favor of [v-ide](https://github.com/v-ide)
     ____      ____                              
     \   \    /   /       __   _______   _______ 
      \   \  /   /       |  | |       \ |   ____|
